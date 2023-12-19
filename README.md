@@ -6,8 +6,9 @@ Dario Benitez, Creacion del Repositorio y Creacio de la vista del Login.
 Anto
 Lucas
 Juan
-Matias
+Mathias, Creacion del carrito de compras.
 
 Referencias:
+Pedidos Ya
 
 Tipografia: Kenyan Coffee
