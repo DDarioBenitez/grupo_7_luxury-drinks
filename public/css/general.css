@@ -1,0 +1,11 @@
+:root{
+--colornegro:#191717;
+--colorletra:#ccc8aa
+}
+
+
+
+* a{
+    color: black;
+    text-decoration: none;
+}
