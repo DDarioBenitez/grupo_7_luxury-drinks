@@ -95,7 +95,7 @@ footer.home-footer p.copy{
 }
 
 
-@media (min-width:361px){
+@media (min-width:425px){
 
 
     body{}
@@ -149,7 +149,7 @@ margin-right: 17px;
 }
 }
 
-@media (min-width:767px){
+@media (min-width:768px){
 
     body{}
 
@@ -167,7 +167,12 @@ margin-right: 17px;
     
     footer.home-footer nav.links-footer{}
     
-    footer.home-footer nav.links-footer ul.footer-links{position: absolute;top: 20px;right: 22px;}
+    footer.home-footer nav.links-footer ul.footer-links{
+        position: absolute;
+        top: 24px;
+        right: 192px;
+        ight: 23px;
+        }
     
     footer.home-footer nav.links-footer ul.footer-links li{
     padding: 10px;
@@ -184,7 +189,7 @@ margin-right: 17px;
     footer.home-footer p.copy{}
 
     nav.links-footer-contacto{
-        margin-left: 100px;
+        margin-left: 200px;
     }
     
 
