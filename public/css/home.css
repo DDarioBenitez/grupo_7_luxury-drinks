@@ -14,10 +14,6 @@
     width: 100%;
 }
 
-.main-container .products-offers{}
-
-.main-container .products-offers h2{}
-
 .main-container .article-tittle{
     display: flex;
     align-items: center;
@@ -81,7 +77,7 @@
 }
 
 .main-container .products .product-details ul .price-actual{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .main-container .products .product-details ul .discount{
@@ -90,6 +86,7 @@
     padding: 5px;
     border-radius: 5px;
     margin-left: 10px;
+    font-size: 15px;
 }
 
 .popular-products{
@@ -141,5 +138,58 @@
 }
 
 
+/* Mobile L */
+@media (min-width: 425px) {
+    .main-container .products{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .main-container .products article figure{
+        width: 80%;
+        height: 20vh;
+    }
+    .main-container .products article{
+        width: 45%;
+    }
+    .benefits-user img{
+        width: 40%;
+    }
+    .main-container .products .product-details ul .price-actual{
+        font-size: 25px;
+    }
+    .main-container .article-tittle{
+        font-size: 25px;
+    }
+    .main-tittle{
+        font-size: 25px;
+    }
+}
 
+/* Tablets */
+@media (min-width: 768px){
+    .main-container .products{
+        flex-wrap: nowrap;
+    }
+    .main-container .products article{
+        width: 30%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .benefits-user{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+    }
+    .benefits-user hr{
+        border: none;
+        border-left: 1px solid hsla(200, 10%, 50%,100);
+        height: 30vh;
+        width: 1px;
+        margin: auto;         
+    }
+}
 
