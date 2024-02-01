@@ -45,6 +45,7 @@
     background-color: #d9d9d9;
     border-radius: 5px;
     width: 100%;
+    height: 35vh;
     margin: auto;
     margin-top: 20px;
 }
@@ -138,6 +139,13 @@
 }
 
 
+/* Mobile S */
+@media (max-width: 424px) {
+    .main-container .products article{
+        height: 45vh;
+    }
+}
+
 /* Mobile L */
 @media (min-width: 425px) {
     .main-container .products{
@@ -178,16 +186,25 @@
 
 /* Desktop */
 @media (min-width: 1024px) {
+    .main-container .products article{
+        width: 20%;
+    }
     .benefits-user{
         display: flex;
         flex-direction: row;
         width: 80%;
         margin: auto;
     }
+    .benefits-user figure{
+        margin: 0;
+    }
+    .benefits-user div{
+        margin: 30px;
+    }
     .benefits-user hr{
         border: none;
         border-left: 1px solid hsla(200, 10%, 50%,100);
-        height: 30vh;
+        height: 10vh;
         width: 1px;
         margin: auto;         
     }
