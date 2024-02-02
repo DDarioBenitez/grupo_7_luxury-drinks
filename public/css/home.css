@@ -1,0 +1,212 @@
+.main-container{
+    width: 100%;
+}
+
+.main-container .main-banner{
+    margin: 0;
+}
+
+.main-container .main-tittle{
+    text-align: center;
+}
+
+.main-container .main-banner img{
+    width: 100%;
+}
+
+.main-container .article-tittle{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px 0px 20px;
+}
+
+.main-container .article-tittle a{
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.main-container .products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.main-container .products article figure{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 30vh;
+    margin: auto;
+}
+
+.main-container .products article{
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    width: 100%;
+    height: 35vh;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.main-container .products figure img{
+    width: auto;
+    margin: 10px;
+}
+
+.main-container .products .product-details{
+    border-top: solid 2px #191717;
+}
+
+.main-container .products .product-details h5{
+    font-size: 15px;
+    margin: 10px 0px 10px 10px
+}
+
+.main-container .products .product-details p{
+    text-decoration: line-through;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.main-container .products .product-details ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-left: 10px;
+}
+
+.main-container .products .product-details ul .price-actual{
+    font-size: 20px;
+}
+
+.main-container .products .product-details ul .discount{
+    background-color: brown;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.popular-products{
+    margin-top: 50px;
+    background-color: #d9d9d9;
+    padding: 30px 0px 50px 0px;
+}
+
+.popular-products h3{
+    text-align: center;
+    margin: 10px;
+}
+
+.popular-products h2{
+    text-align: center;
+}
+
+.popular-products .products .popular{
+    background-color: #f1efef;
+    position: relative;
+}
+
+.popular-products .products .logo-popular{
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+}
+
+.benefits-user div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.benefits-user{
+    margin-top: 30px;
+}
+
+.benefits-user hr{
+    width: 70%;
+}
+
+.benefits-user img{
+    width: 60%;
+}
+
+
+/* Mobile S */
+@media (max-width: 424px) {
+    .main-container .products article{
+        height: 45vh;
+    }
+}
+
+/* Mobile L */
+@media (min-width: 425px) {
+    .main-container .products{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .main-container .products article figure{
+        width: 80%;
+        height: 20vh;
+    }
+    .main-container .products article{
+        width: 45%;
+    }
+    .benefits-user img{
+        width: 40%;
+    }
+    .main-container .products .product-details ul .price-actual{
+        font-size: 25px;
+    }
+    .main-container .article-tittle{
+        font-size: 25px;
+    }
+    .main-tittle{
+        font-size: 25px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px){
+    .main-container .products{
+        flex-wrap: nowrap;
+    }
+    .main-container .products article{
+        width: 30%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .main-container .products article{
+        width: 20%;
+    }
+    .benefits-user{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+    }
+    .benefits-user figure{
+        margin: 0;
+    }
+    .benefits-user div{
+        margin: 30px;
+    }
+    .benefits-user hr{
+        border: none;
+        border-left: 1px solid hsla(200, 10%, 50%,100);
+        height: 10vh;
+        width: 1px;
+        margin: auto;         
+    }
+}
+

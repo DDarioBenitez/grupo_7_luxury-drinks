@@ -1,0 +1,27 @@
+/* Paleta colores 
+Blaco suave: #f1efef
+Gris Oscuro: #7d7c7c
+Beige opaco: #ccc8aa
+Gris Suave: #d9d9d9
+Negro suave: #191717
+*/
+
+
+*{
+    font-family: 'Poppins', sans-serif;                                            
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    color: #191717;
+}
+
+main{
+    background-color: #f1efef;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
