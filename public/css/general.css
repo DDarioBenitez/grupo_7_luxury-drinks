@@ -5,18 +5,15 @@
 --negro:#191717;
 --gris:#7D7C7C;
 --letrasHeader:#CCC8AA;
---blanco:#ffff;
+--blancoClaro:#f1efef;
+--grisSuave: #d9d9d9;
+
 
 }
 *{
     font-family: var(--poppins);
 
 }
-
-
-
-
-
 
 ul{
     list-style: none;
