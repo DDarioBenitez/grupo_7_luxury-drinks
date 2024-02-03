@@ -2,51 +2,68 @@
 
     .header {
         background-color: var(--negro);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .logo {
-        margin: auto;
+        width: 50%;
+        /* display: grid; */
     }
 
     img {
-        margin: auto;
+    width: 100%;
     }
 
     .search {
-        margin: auto;
+        display: none;
     }
 
     input {
-        margin: auto;
+        display: none;
     }
 
     .lupa {
-        margin: auto;
+        display: none;
     }
 
     .carrito {
-        margin: auto;
+        display: none;
     }
 
     .logreg {
-        margin: auto;
+        display: none;
     }
 
     .navheader {
-        margin: auto;
+        display: none;
     }
 
     ul {
-        margin: auto;
+        display: none;
     }
 
     li {
-        margin: auto;
+        display: none;
     }
 
     a {
-        margin: auto;
+        display: none;
     }
+    .burger-menu{
+        background-color: var(--negro);
+        max-width: 46px;
+        padding: 7px 12px;
+        font-size: 25px;
+        border: 1px solid var(--letrasHeader);
+        margin-right: 20px;
+        }
+        .burger-menu i{
+            color: var(--letrasHeader)
+        }
 }
 
 @media screen and (min-width:768px) {
