@@ -1,8 +1,16 @@
+.carousel.pointer-event{
+    width: 50%;
+}
 
+main.product-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-main.product-detail{}
-
-main.product-detail div.produc-Precio{}
+main.product-detail div.produc-Precio{
+    width: 90%;
+}
 
 main.product-detail div.produc-Precio p{}
 
@@ -18,17 +26,61 @@ main.product-detail div.caracteristicas-product ul li{}
 
 main.product-detail div.Productos-similares{
     display: flex;
+    padding: 0;
+    width: 100%;
 }
 
-main.product-detail div.Productos-similares h3{}
+main.product-detail div.Productos-similares section.Products-similares-1{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+}
+
+main.product-detail div.Productos-similares section.Products-similares-1 figure{}
+
+main.product-detail div.Productos-similares section.Products-similares-3{
+    display: none;
+    width: 30%;
+}
+main.product-detail div.Productos-similares section.Products-similares-4{
+    display: none;
+}
+
+ /* inspector */
+.h-50 {
+    height: 100%!important;
+}
+
+
+.mx-1 {
+    margin-right: -0.75rem!important;
+    margin-left: 0.25rem!important;
+}
+
+.mx-2 {
+   
+margin-left: 0rem!important;
+}
+
+.w-100 {
+    width: 95%;
+}
+
+main.product-detail div.Productos-similares h3{
+    padding: 0;
+    width: 250px;
+}
 
 main.product-detail div.Productos-similares section.Products-similares{
     display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
 }
 
 main.product-detail div.Productos-similares section.Products-similares figure{
     display: flex;
-    width: 150px;
 }
 
 main.product-detail div.Productos-similares section.Products-similares figure img{
@@ -39,9 +91,25 @@ main.product-detail div.Productos-similares section.Products-similares figure im
 main.product-detail div.Productos-similares section.Products-similares p{}
 
 
+.carousel.pointer-event {
+    width: 100%;
+}
 
+div.card-custom{display: none;}
+
+.carousel{
+    width: 100%;
+}
 
 @media (min-width:426px){
+
+
+
+div.card-custom{display: contents;display: flex;flex-wrap: wrap;position: absolute;right: 40px;top: 92px;box-shadow: 0px 0px 10px rgb(100, 100, 100);height: 297px;border-radius: 10px;}
+
+.carousel{
+    width: 50%;
+}
 
 .carousel-indicators .poi-custom-rounder{
     height: 5px;
@@ -49,7 +117,10 @@ main.product-detail div.Productos-similares section.Products-similares p{}
     border-radius: 50%;
 }
 
-main.product-detail{}
+main.product-detail{
+    align-items: start;
+    position: relative;
+}
 
 main.product-detail div.produc-Precio{}
 
@@ -57,7 +128,11 @@ main.product-detail div.produc-Precio p{}
 
 main.product-detail div.produc-Precio p.pago{}
 
-main.product-detail div.caracteristicas-product{}
+main.product-detail div.caracteristicas-product{
+    /* text-align: start; */
+    display: flex;
+    flex-direction: column;
+}
 
 main.product-detail div.caracteristicas-product h5{}
 
@@ -65,16 +140,83 @@ main.product-detail div.caracteristicas-product ul{}
 
 main.product-detail div.caracteristicas-product ul li{}
 
-main.product-detail div.Productos-similares h3{}
+main.product-detail div.Productos-similares h3{
+    width: 100%;
+}
 
-main.product-detail div.Productos-similares section.Products-similares{}
+main.product-detail div.Productos-similares {
+    width: 50%;
+    justify-content: space-around;
+}
+
+main.product-detail div.Productos-similares section.Products-similares{width: 30%!important;}
 
 main.product-detail div.Productos-similares section.Products-similares figure{}
 
 main.product-detail div.Productos-similares section.Products-similares figure img{}
 
-main.product-detail div.Productos-similares section.Products-similares p{} 
+main.product-detail div.Productos-similares section.Products-similares p{
+    font-size: 18px;
+} 
 
+
+
+main.product-detail div.Productos-similares section.Products-similares-1 figure{
+
+}
+
+main.product-detail div.Productos-similares section.Products-similares-3{
+    display: contents;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    border-radius: 10px;
+    width: 30%!important;
+}
+main.product-detail div.Productos-similares section.Products-similares-4{
+    display: contents;
+    display: none;
+}
+
+main.product-detail div.Productos-similares section.Products-similares-1 p{
+    font-size: 18px;
+} 
+
+main.product-detail div.Productos-similares section.Products-similares-3 p{
+    font-size: 18px;
+}
+
+main.product-detail div.Productos-similares section.Products-similares-4 p{
+    font-size: 18px;
+} 
+
+.h-50 {
+    height: 100%;
+    display: none;
+    width: 30%;
+}
+
+
+.mx-1 {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.card-body {
+    display: contents;
+ }
+
+ .carousel.pointer-event {
+    width: 50%;
+}
+
+.me-1 {
+    margin-right: -0.75rem!important;
+}
 
 }
 

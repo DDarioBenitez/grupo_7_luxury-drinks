@@ -17,7 +17,10 @@ footer.home-footer figure img{
     display: flex;
 }
 
-footer.home-footer nav.links-footer{}
+footer.home-footer nav.links-footer{
+    display: flex;
+    justify-content: space-around;
+}
 
 footer.home-footer nav.links-footer ul.footer-links{
    padding: 0;
@@ -26,17 +29,27 @@ footer.home-footer nav.links-footer ul.footer-links{
    color: #ccc8aa;
 }
 
-footer.home-footer nav.links-footer ul.footer-links a{
-    color: #ccc8aa;
+footer.home-footer nav.links-footer ul.footer-links li{
+    padding-left: 10px;
 }
 
-footer.home-footer nav.links-footer-contacto{}
+footer.home-footer nav.links-footer ul.footer-links a{
+    color: #ccc8aa;
+    font-size: 14px;
+}
+
+footer.home-footer nav.links-footer-contacto{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 footer.home-footer nav.links-footer-contacto ul.footer-links{
     padding: 0;
     display: flex;
     margin-top: 10px;
-    justify-content: center;
+    justify-content: start;
 }
 
 footer.home-footer nav.links-footer-contacto ul.footer-links a{
@@ -57,16 +70,18 @@ footer.home-footer nav.links-footer ul.footer-links-contacto li a{
 
 footer.home-footer div.div-footer{
     background-color: var(--colorletra);
-    width: 80%;
+    width: 85%;
     border-radius: 10px;
     height: 33px;
     text-align: center;
     display: flex;
     justify-content: center;
+    padding: 0 5px 0 5px;
 }
 
 footer.home-footer div.links-contacto{
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -74,6 +89,8 @@ footer.home-footer div.div-footer p{
     align-items: center;
     color: var(--colornegro);
     display: flex;
+    margin: 0;
+    padding: 0 5px 0 5px;
 }
 
 footer.home-footer ul.footer-p{
@@ -81,7 +98,7 @@ footer.home-footer ul.footer-p{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    padding-right: 60px;
+    padding-right: 35px;
 }
 
 footer.home-footer ul.footer-p p{
@@ -124,7 +141,7 @@ footer.home-footer p.copy{
         margin-bottom: 30px;
         position: absolute;
         top: 24px;
-        right: 88px;
+        right: 43px;
     }
 
     footer.home-footer nav.links-footer-contacto ul.footer-links{
@@ -182,7 +199,7 @@ margin-right: 17px;
     footer.home-footer nav.links-footer ul.footer-links{
         position: absolute;
         top: 24px;
-        right: 192px;
+        right: 77px;
         ight: 23px;
         }
     
