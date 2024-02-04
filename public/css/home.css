@@ -273,3 +273,10 @@
         margin: auto;
     }
 }
+
+/* Laptop L */
+@media (min-width: 1440px) {
+    .main-container .products article {
+        height: 40vh;
+    }
+}
