@@ -178,6 +178,8 @@ main.product-detail div.Productos-similares section.Products-similares-4{
     display: none;
 }
 
+
+
 main.product-detail div.Productos-similares section.Products-similares-1 p{
     font-size: 18px;
 } 
@@ -229,15 +231,20 @@ main.product-detail div.Productos-similares section.Products-similares-4 p{
         border-radius: 50%;
     }
     
-    main.product-detail{}
+    main.product-detail{
+}
     
-    main.product-detail div.produc-Precio{}
+    main.product-detail div.produc-Precio{
+    margin-left: 50px;
+}
     
     main.product-detail div.produc-Precio p{}
     
     main.product-detail div.produc-Precio p.pago{}
     
-    main.product-detail div.caracteristicas-product{}
+    main.product-detail div.caracteristicas-product{
+    margin-left: 50px;
+}
     
     main.product-detail div.caracteristicas-product h5{}
     
@@ -245,7 +252,10 @@ main.product-detail div.Productos-similares section.Products-similares-4 p{
     
     main.product-detail div.caracteristicas-product ul li{}
     
-    main.product-detail div.Productos-similares h3{}
+    main.product-detail div.Productos-similares h3{
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
     
     main.product-detail div.Productos-similares section.Products-similares{}
     
@@ -255,6 +265,60 @@ main.product-detail div.Productos-similares section.Products-similares-4 p{
     
     main.product-detail div.Productos-similares section.Products-similares p{} 
     
+    main.product-detail div.Productos-similares section.Products-similares-3{
+    width: 20%!important;
+}
+
+    main.product-detail div.Productos-similares section.Products-similares-4{
+        display: contents;
+        display: contents;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        border-radius: 10px;
+        width: 20%!important;
+}
+
+main.product-detail div.Productos-similares section.Products-similares-1{
+    width: 20%!important;
+}
     
-    }
+main.product-detail div.Productos-similares section.Products-similares-1 p{} 
     
+main.product-detail div.Productos-similares section.Products-similares-3 p{}
+    
+main.product-detail div.Productos-similares section.Products-similares-4 p{} 
+    
+    
+main.product-detail div.Productos-similares {}
+
+main.product-detail div.Productos-similares section.Products-similares{
+    width: 20%!important;
+}
+
+main.product-detail div.Productos-similares section.Products-similares figure{}
+
+main.product-detail div.Productos-similares section.Products-similares figure img{}
+
+main.product-detail div.Productos-similares section.Products-similares p{} 
+
+
+
+main.product-detail div.Productos-similares section.Products-similares-1 figure{}
+    
+.carousel.pointer-event {
+    margin-left: 50px;
+}
+
+main.product-detail h2{
+    margin-left: 50px;
+    font-size: 23px;
+}
+
+div.card-custom{
+    right: 76px;
+    top: 82px;
+    height: 314px;
+}
+
+}
