@@ -1,91 +1,91 @@
 @media (max-width: 425px) {
-    .registrarse {}
+    .registrarse {display: flex;}
 
-    h1 {}
+    h1 {display: flex;}
 
-    p {}
+    p {display: flex;}
 
-    .nomape {}
+    .nomape {display: flex;}
 
-    .name {}
+    .name {display: flex;}
 
-    .email {}
+    .email {display: flex;}
 
-    .data {}
+    .data {display: flex;}
 
-    .contrep {}
+    .contrep {display: flex;}
 
-    .contrasenia {}
+    .contrasenia {display: flex;}
 
-    .repcont {}
+    .repcont {display: flex;}
 
-    .normas {}
+    .normas {display: flex;}
 
-    .p1 {}
+    .p1 {display: flex;}
 
-    .p2 {}
+    .p2 {display: flex;}
 
-    .p3 {}
+    .p3 {display: flex;}
 
-    .p4 {}
+    .p4 {display: flex;}
 
-    .xm1 {}
+    .xm1 {display: flex;}
 
-    .xm2 {}
+    .xm2 {display: flex;}
 
-    .xm3 {}
+    .xm3 {display: flex;}
 
-    .button {}
+    .button {display: flex;}
 }
 
 @media (min-width:768px) {
-    .registrarse {}
+    .registrarse {display: flex;}
 
     h1 {
         text-align: center;
     }
 
-    .nomape {}
+    .nomape {display: flex;}
 
-    .name {}
+    .name {display: flex;}
 
-    .email {}
+    .email {display: flex;}
 
-    .data {}
+    .data {display: flex;}
 
-    .contrep {}
+    .contrep {display: flex;}
 
-    .contrasenia {}
+    .contrasenia {display: flex;}
 
-    .repcont {}
+    .repcont {display: flex;}
 
-    .normas {}
+    .normas {display: flex;}
 
-    .p1 {}
+    .p1 {display: flex;}
 
-    .p2 {}
+    .p2 {display: flex;}
 
-    .p3 {}
+    .p3 {display: flex;}
 
     .p4 {
         text-align: center;
     }
 
-    .xm1 {}
+    .xm1 {display: flex;}
 
-    .xm2 {}
+    .xm2 {display: flex;}
 
-    .xm3 {}
+    .xm3 {display: flex;}
 
-    .button {}
+    .button {display: flex;}
 }
 
 @media (min-width: 1024px) {
-    .registrarse {}
+    .registrarse {display: flex;}
 
-    h1 {}
+    h1 {display: flex;}
 
-    p {}
+    p {display: flex;}
 
     .nomape {
         display: flex;
@@ -125,9 +125,9 @@
         align-items: flex-end;
     }
 
-    .contrasenia {}
+    .contrasenia {display: flex;}
 
-    .repcont {}
+    .repcont {display: flex;}
 
     .normas {
         width: 50%;
@@ -139,11 +139,11 @@
         margin-left: 80px;
     }
 
-    .p1 {}
+    .p1 {display: flex;}
 
-    .p2 {}
+    .p2 {display: flex;}
 
-    .p3 {}
+    .p3 {display: flex;}
 
     .p4 {
         text-align: center;
@@ -155,11 +155,11 @@
         gap: 35px;
     }
 
-    .xm1 {}
+    .xm1 {display: flex;}
 
-    .xm2 {}
+    .xm2 {display: flex;}
 
-    .xm3 {}
+    .xm3 {display: flex;}
 
 
 }
