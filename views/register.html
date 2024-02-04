@@ -21,7 +21,7 @@
             </div>
 
             <div class="search">
-                <input type="text" placeholder="Buscar Productos, marcas y más">
+                <input class="busqueda" type="text" placeholder="Buscar Productos, marcas y más">
                 <div class="lupa">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
@@ -58,47 +58,54 @@
     <main class="registrarse">
         <form action="/registrarse" method="post">
 
-            <h1>Refistrarse</h1>
+            <h1>Registrarse</h1>
 
-            <p class="p4">completá los siguientes datos para registrarte como usuario</p>
+            <p class="p4">Completá los siguientes datos para registrarte como usuario</p>
 
             <div class="nomape">
                 <div class="name">
-                    <label for="name">nombre</label>
-                    <input type="name" name="name" id="name" value="">
+                    <label for="name"></label>
+                    <input type="name" name="name" id="name" value="" placeholder="nombre">
+
                 </div>
                 <div class="name">
-                    <label for="apellido">apellido</label>
-                    <input type="name" name="apellido" id="apellido" value="">
+                    <label for="apellido"></label>
+                    <input type="name" name="apellido" id="apellido" value="" placeholder="apellido">
                 </div>
             </div>
 
             <div class="email">
-                <label for="email">e-mail</label>
-                <input type="email" name="email" id="email" value="">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" value="" placeholder="e-mail">
             </div>
 
             <div class="data">
+                <div class="contrep">
                 <div class="contrasenia">
-                    <label for="contrasenia">contraseña</label>
-                    <input type="password" name="contrasenia" id="contrasenia" value="">
+                    <label for="contrasenia"></label>
+                    <input type="password" name="contrasenia" id="contrasenia" value="" placeholder="contraseña">
                 </div>
 
                 <div class="repcont">
-                    <label for="repetir contrasenia">repetir contraseña</label>
-                    <input type="password" name="repetir contrasenia" id="repetir contrasenia" value="">
-                </div>
+                    <label for="repetir contrasenia"></label>
+                    <input type="password" name="repetir contrasenia" id="repetir contrasenia" value=""
+                        placeholder="repetir contraseña">
 
+                </div>
+</div>
                 <div class="normas">
-                    <i class="fa-solid fa-circle-xmark" style="color: #ccc8aa;"></i>
+                    <i class="xm1" class="fa-solid fa-circle-xmark" style="color: #ccc8aa;"></i>
                     <p class="p1">8 a 15 caracteres</p>
-                    <i class="fa-solid fa-circle-xmark" style="color: #ccc8aa;"></i>
+                    <i class="xm2" class="fa-solid fa-circle-xmark" style="color: #ccc8aa;"></i>
                     <p class="p2"> Al menos una mayúscula</p>
-                    <i class="fa-solid fa-circle-xmark" style="color: #ccc8aa;"></i>
+                    <i class="xm3" class="fa-solid fa-circle-xmark" style="color: #ccc8aa;"></i>
                     <p class="p3">Al menos un número</p>
                 </div>
             </div>
-
+            <div class="button">
+                <button type="submit">Enviar Datos</button>
+                <button type="reset">Cancelar</button>
+            </div>
             <div>
                 <p class="p4">Ingresá a tu email para verificar tu registro</p>
             </div>

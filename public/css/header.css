@@ -95,7 +95,7 @@
         margin-top: 7%;
     }
 
-    input {
+    .busqueda {
         position: absolute;
         display: inline;
         padding: 9px;
@@ -226,7 +226,7 @@
         margin-top: 7%;
     }
 
-    input {
+    .busqueda {
         position: absolute;
         display: inline;
         padding: 9px;
