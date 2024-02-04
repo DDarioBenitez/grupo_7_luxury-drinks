@@ -1,0 +1,139 @@
+:root {
+  --bg-cart-product: #d9d9d9;
+  --bg-price-quantity: #7d7c7c;
+  --bg-prices: #ccc8aa;
+}
+
+.cart-body {
+  background-color: white;
+  width: 100vw;
+}
+.cart-main {
+  padding: 1rem;
+}
+
+.cart-product {
+  background-color: var(--bg-cart-product);
+  height: 15vh;
+  border-radius: 0 10px 10px 0;
+}
+
+.cart-title {
+  font-size: 1.3rem;
+}
+.cart-product-title {
+  vertical-align: middle;
+  text-align: center;
+}
+.cart-product-img {
+  background-color: white;
+}
+.product-buttons {
+  margin-top: 2rem;
+}
+.cart-product-plus {
+  background-color: var(--bg-price-quantity);
+  border: none;
+  border-radius: 10px 0 0 10px;
+  width: 20px;
+  height: 25px;
+  padding: 0;
+  text-align: center;
+}
+.cart-product-minus {
+  background-color: var(--bg-price-quantity);
+  border: none;
+  border-radius: 0 10px 10px 0px;
+  width: 20px;
+  height: 25px;
+  padding: 0;
+  text-align: center;
+}
+
+.cart-product-quantity {
+  vertical-align: middle;
+  margin: 0;
+  background-color: var(--bg-price-quantity);
+  width: 25px;
+  height: 25px;
+  font-weight: bold;
+}
+.cart-product-trash {
+  border: none;
+  color: var(--colornegro);
+  font-size: 1.5rem;
+  width: 3.5rem;
+  padding: 0;
+}
+
+.cart-product-price {
+  width: 95%;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--bg-prices);
+  margin-bottom: 9px;
+}
+
+.cart-resume-title {
+  background-color: var(--bg-cart-product);
+  padding: 10px;
+}
+
+.cart-resume-title-product {
+  padding: 10px;
+  position: relative;
+}
+.borde-inferior {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  border-bottom: 1px solid var(--colorletra);
+}
+.cart-resume-title-product h6 {
+  font-weight: bold;
+}
+.cart-resume-price {
+  margin: 0;
+  padding: 10px;
+}
+
+.cart-resume-button-comprar {
+  background-color: var(--colornegro);
+  color: var(--colorletra);
+  transition: all 0.3s;
+}
+.cart-resume-button-comprar:hover {
+  background-color: var(--bg-prices);
+  color: black;
+  transition: all 0.3s;
+}
+.cart-resume-button {
+  align-self: center;
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .cart-product-price {
+    width: 70%;
+  }
+  .cart-resume-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-resume-price-span-1 {
+    font-size: 2rem;
+  }
+  .cart-resume-price-span-2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: var(--bg-prices);
+    padding: 8px;
+  }
+  .cart-resume {
+    align-self: center;
+    height: 99vh;
+  }
+}

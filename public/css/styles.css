@@ -3,3 +3,12 @@
 @import "form.css";
 @import "header.css";
 @import "general.css";
+@import "cart.css";
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --colornegro: #191717;
+  --colorletra: #ccc8aa;
+}
