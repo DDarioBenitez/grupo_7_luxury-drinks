@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins & display=swap');
+
+@import "general.css";
 @import "home.css";
 @import "footer.css";
 @import "form.css";
 @import "header.css";
-@import "general.css";
+@import "login.css";
