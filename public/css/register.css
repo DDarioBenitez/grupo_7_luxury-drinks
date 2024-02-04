@@ -1,0 +1,50 @@
+@media (max-width: 425px){
+    .registrarse{ display: none;}
+    h1{display: none;}
+    p{display: none;}
+    .nomape{display: none;}
+    .name{display: none;}
+    .email{display: none;}
+    .data{display: none;}
+    .contrasenia{display: none;}
+    .repcont{display: none;}
+    .normas{display: none;}
+    .p1{display: none;}
+    .p2{display: none;}
+    .p3{display: none;}
+    .p4{display: none;}
+}
+
+@media (min-width:768px) {
+    .registrarse{ display: none;}
+    h1{display: none;}
+    p{display: none;}
+    .nomape{display: none;}
+    .name{display: none;}
+    .email{display: none;}
+    .data{display: none;}
+    .contrasenia{display: none;}
+    .repcont{display: none;}
+    .normas{display: none;}
+    .p1{display: none;}
+    .p2{display: none;}
+    .p3{display: none;}
+    .p4{display: none;}
+}
+
+@media (min-width: 1024px) {
+    .registrarse{ display: none;}
+    h1{display: none;}
+    p{display: none;}
+    .nomape{display: none;}
+    .name{display: none;}
+    .email{display: none;}
+    .data{display: none;}
+    .contrasenia{display: none;}
+    .repcont{display: none;}
+    .normas{display: none;}
+    .p1{display: none;}
+    .p2{display: none;}
+    .p3{display: none;}
+    .p4{display: none;}
+}
