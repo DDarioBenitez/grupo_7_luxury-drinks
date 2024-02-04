@@ -48,6 +48,10 @@
     margin: auto;
 }
 
+.main-container .products-offers{
+    padding: 20px 0 40px 0;
+}
+
 .main-container .products article figure {
     display: flex;
     justify-content: center;
@@ -90,6 +94,7 @@
     text-decoration: line-through;
     margin: 0;
     margin-left: 10px;
+    color: red;
 }
 
 .main-container .products .product-details ul {
@@ -113,9 +118,8 @@
 }
 
 .popular-products {
-    margin-top: 50px;
     background-color: #ccc8aa;
-    padding: 30px 0px 50px 0px;
+    padding: 0px 0px 50px 0px;
 }
 
 .popular-products h3 {
@@ -209,6 +213,15 @@
     text-decoration: none;
     color: #0df053;
     background: #fff;
+}
+
+.main-container .banner-drinks figure{
+    width: 100%;
+    margin: 0;
+}
+.main-container .banner-drinks figure img{
+    width: 100%;
+    height: auto;
 }
 
 /* Mobile L*/
