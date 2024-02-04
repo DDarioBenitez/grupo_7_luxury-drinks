@@ -30,6 +30,15 @@ new Glider(document.querySelector('.glider'), {
         itemWidth: 700,
         duration: 0.25
       }
+    }, {
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        itemWidth: 900,
+        duration: 0.25
+      }
     }
   ]
 });
@@ -62,6 +71,15 @@ new Glider(document.querySelector('.glider2'), {
         slidesToShow: 3,
         slidesToScroll: 1,
         itemWidth: 700,
+        duration: 0.25
+      }
+    }, {
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        itemWidth: 900,
         duration: 0.25
       }
     }
@@ -98,6 +116,15 @@ new Glider(document.querySelector('.glider3'), {
         itemWidth: 700,
         duration: 0.25
       }
+    }, {
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        itemWidth: 900,
+        duration: 0.25
+      }
     }
   ]
 });
@@ -132,6 +159,15 @@ new Glider(document.querySelector('.glider4'), {
         itemWidth: 700,
         duration: 0.25
       }
+    }, {
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        itemWidth: 900,
+        duration: 0.25
+      }
     }
   ]
 });
@@ -164,6 +200,15 @@ new Glider(document.querySelector('.glider4'), {
         slidesToShow: 3,
         slidesToScroll: 1,
         itemWidth: 700,
+        duration: 0.25
+      }
+    }, {
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        itemWidth: 900,
         duration: 0.25
       }
     }
@@ -200,6 +245,15 @@ new Glider(document.querySelector('.glider5'), {
         itemWidth: 700,
         duration: 0.25
       }
+    }, {
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        itemWidth: 900,
+        duration: 0.25
+      }
     }
   ]
 });
@@ -234,6 +288,26 @@ new Glider(document.querySelector('.glider6'), {
         itemWidth: 700,
         duration: 0.25
       }
+    }, {
+      // screens greater than >= 1440px
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        itemWidth: 900,
+        duration: 0.25
+      }
     }
   ]
+});
+
+//Slider Banners
+new Glider(document.querySelector('.glider-banner'), {
+  slidesToShow: 1,
+  dots: '#dots',
+  draggable: true,
+  arrows: {
+    prev: '.prev-banner',
+    next: '.next-banner'
+  }
 });

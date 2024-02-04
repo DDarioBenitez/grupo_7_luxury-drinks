@@ -2,6 +2,20 @@
     width: 100%;
 }
 
+.main-container .glider-contain-banner{
+    width: 100%;
+    position: relative;
+    background-color: #ccc8aa;
+}
+
+.main-container .glider-contain-banner figure{
+    margin: 3%;
+}
+
+.main-container .glider-contain-banner figure img{
+    width: 100%;
+}
+
 .main-container .main-banner {
     margin: 0;
 }
@@ -100,7 +114,7 @@
 
 .popular-products {
     margin-top: 50px;
-    background-color: #d9d9d9;
+    background-color: #ccc8aa;
     padding: 30px 0px 50px 0px;
 }
 
@@ -156,7 +170,7 @@
 .glider-next4,
 .glider-next5,
 .glider-next6 {
-    right: 5%;
+    right: 1%;
 }
 
 .glider-prev,
@@ -165,7 +179,36 @@
 .glider-prev4,
 .glider-prev5,
 .glider-prev6 {
-    left: 5%;
+    left: 1%;
+}
+.prev-banner{
+    left: 1%;
+    top: 40%;
+}
+.next-banner{
+    right: 1%;
+    top: 40%;
+}
+
+.main-container .btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+.main-container .btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
 }
 
 /* Mobile L*/
@@ -186,8 +229,13 @@
         height: 35vh;
     }
 }
+@media (max-width: 767px) {
+    .main-container .btn-wsp{
+        display: none;
+    }
+}
 
-/* Desktop */
+/* Laptop */
 @media (min-width: 1024px) {
     .benefits-user {
         display: flex;
