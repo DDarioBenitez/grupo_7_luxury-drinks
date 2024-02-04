@@ -31,6 +31,9 @@ app.get('/registrarse', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/register.html'))
 })
 
+app.get('/DetalleDeProducto', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/productdetail.html'))
+})
 
 
 app.listen(port, () => console.log(`http://localhost:${port}`))
