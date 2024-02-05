@@ -38,6 +38,7 @@
 .main-container .article-tittle a {
     margin-left: 10px;
     text-decoration: none;
+    color: rgb(60, 60, 224);
 }
 
 .main-container .products {
