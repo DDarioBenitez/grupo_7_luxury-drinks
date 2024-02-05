@@ -1,165 +1,180 @@
-@media (max-width: 425px) {
-    .registrarse {display: flex;}
-
-    h1 {display: flex;}
-
-    p {display: flex;}
-
-    .nomape {display: flex;}
-
-    .name {display: flex;}
-
-    .email {display: flex;}
-
-    .data {display: flex;}
-
-    .contrep {display: flex;}
-
-    .contrasenia {display: flex;}
-
-    .repcont {display: flex;}
-
-    .normas {display: flex;}
-
-    .p1 {display: flex;}
-
-    .p2 {display: flex;}
-
-    .p3 {display: flex;}
-
-    .p4 {display: flex;}
-
-    .xm1 {display: flex;}
-
-    .xm2 {display: flex;}
-
-    .xm3 {display: flex;}
-
-    .button {display: flex;}
+.registrarse {
+    width: 100%;
 }
 
-@media (min-width:768px) {
-    .registrarse {display: flex;}
+.registrarse form {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
-    h1 {
-        text-align: center;
+.registrarse form .nomape {
+    display: flex;
+    flex-direction: row;
+    width: 77.5vw;
+    justify-content: space-between;
+}
+
+.registrarse form .nomape input {
+    width: 50%;
+}
+
+.registrarse form .email {
+    width: 100%;
+    display: flex;
+    padding-top: 1rem;
+}
+
+.registrarse form .email input {
+    width: 75.5vw;
+}
+
+.registrarse form .data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.registrarse form .data .contrep {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.registrarse form .data .contrep input {
+    width: 75.5vw;
+}
+
+.registrarse form .data .normas {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.registrarse form .data .normas ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    align-items: flex-start;
+    gap: 9px;
+}
+
+.registrarse form .data .normas ul li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.registrarse form .data .normas ul li i {
+
+    color: var(--letrasHeader);
+}
+
+.registrarse form .data .normas ul li p {
+    margin: 0;
+}
+
+.registrarse form input {
+    border: none;
+    background-color: var(--grisSuave);
+    border-radius: 9px;
+    margin: 3px;
+    padding: 6px;
+}
+
+.registrarse form .button {
+
+    padding: 13px;
+
+    display: flex;
+
+    justify-content: center;
+
+    height: 2.2rem;
+}
+
+.registrarse form .button button {
+
+    font-size: 1rem;
+
+    border-radius: 0.5rem;
+
+    border: none;
+
+    background-color: var(--letrasHeader);
+}
+
+.registrarse form .data {
+    display: flex;
+    flex-direction: column;
+}
+
+.registrarse form .data .contrep {
+    width: 100%;
+    display: flex;
+}
+
+
+@media(min-width: 768px) {
+
+    .registrarse form .data {
+        display: flex;
+        flex-direction: row;
     }
 
-    .nomape {display: flex;}
+    .registrarse form .data .contrep {
+        width: 50%;
+        display: flex;
+    }
 
-    .name {display: flex;}
+    .registrarse form .data .contrep input {
 
-    .email {display: flex;}
+        width: 90%;
+    }
 
-    .data {display: flex;}
+    .registrarse form .data .normas {
 
-    .contrep {display: flex;}
-
-    .contrasenia {display: flex;}
-
-    .repcont {display: flex;}
-
-    .normas {display: flex;}
-
-    .p1 {display: flex;}
-
-    .p2 {display: flex;}
-
-    .p3 {display: flex;}
+        width: 50%;
+    }
 
     .p4 {
+        margin: 0;
         text-align: center;
     }
-
-    .xm1 {display: flex;}
-
-    .xm2 {display: flex;}
-
-    .xm3 {display: flex;}
-
-    .button {display: flex;}
 }
 
 @media (min-width: 1024px) {
-    .registrarse {display: flex;}
-
-    h1 {display: flex;}
-
-    p {display: flex;}
-
-    .nomape {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px;
-        margin: 10px 0;
-        color: var(--grisSuave);
+    .registrarse form .data {
+        height: 14vh;
     }
 
-    .name {
-        display: flex;
-        border-radius: 9px;
-        border: 0;
+    .registrarse form .data .normas {
+        height: 100%;
+        padding-top: 10px;
     }
 
-    .email {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 10px 0;
+    .registrarse form .data .normas ul li {
+        margin: 0;
     }
 
-    .data {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: nowrap;
-        justify-content: center;
+    .registrarse form .data .contrep {
+
+        align-self: start;
+
+        gap: 1rem;
+
+        padding-top: 1rem;
     }
-
-    .contrep {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+    .registrarse form .nomape{
+        padding-top: 1rem;
     }
-
-    .contrasenia {display: flex;}
-
-    .repcont {display: flex;}
-
-    .normas {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        margin-left: 80px;
+    .registrarse form input{
+        height: 3vh;
     }
-
-    .p1 {display: flex;}
-
-    .p2 {display: flex;}
-
-    .p3 {display: flex;}
-
-    .p4 {
-        text-align: center;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        gap: 35px;
-    }
-
-    .xm1 {display: flex;}
-
-    .xm2 {display: flex;}
-
-    .xm3 {display: flex;}
-
-
 }

@@ -14,9 +14,11 @@
 *{
     font-family: var(--poppins);
 }
+
 body{
     margin: 0;
 }
+
 ul{
     list-style: none;
     padding-left: 10px;
