@@ -25,7 +25,7 @@ app.get('/cart', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/productCart.html'))
 })
 app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/register'))
+    res.sendFile(path.join(__dirname, '/views/register.html'))
 })
 
 
