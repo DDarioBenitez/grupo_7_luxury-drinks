@@ -157,7 +157,8 @@
 }
 
 .benefits-user hr {
-    width: 70%;
+    width: 60%;
+    margin: 50px;
 }
 
 .benefits-user img {
