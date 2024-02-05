@@ -23,7 +23,6 @@ main {
 ul {
   padding: 0;
   list-style: none;
-  padding-left: 10px;
 }
 :root {
   --colornegro: #191717;
