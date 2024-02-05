@@ -23,6 +23,7 @@ main {
 ul {
   padding: 0;
   list-style: none;
+  padding-left: 10px;
 }
 :root {
   --colornegro: #191717;
@@ -36,6 +37,11 @@ ul {
 }
 :root {
   --fontPoppins: "Poppins", sans-serif;
+  --negro: #191717;
+  --gris: #7d7c7c;
+  --letrasHeader: #ccc8aa;
+  --blancoClaro: #f1efef;
+  --grisSuave: #d9d9d9;
 }
 
 * {
