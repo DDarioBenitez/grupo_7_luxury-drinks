@@ -1,32 +1,31 @@
 const express = require('express')
-
 const path = require('path')
-
 const app = express();
+const port = 3050;
 
+/* CONFIGS */
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "./views"));
+
+/* MIDDLEWARE */
 app.use(express.static('public'));
 
-const port = 3000;
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/index.html'))
-})
-app.get('/h', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/home.html'))
-})
-
-app.get('/login', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/login.html'))
-})
-app.get('/detail', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/productDetail.html'))
-})
-app.get('/cart', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/productCart.html'))
-})
-app.get('/register', (req, res) => {
-    res.sendFile(path.join(__dirname, '/views/register.html'))
-})
 
 
+/* ENRUTADORES */
+const otherRoutes = require("./routes/other.routes");
+const authRoutes = require("./routes/auth.routes");
+const cartRoutes = require("./routes/cart.routes");
+const productDetail = require("./routes/products.routes");
+
+
+/* RUTAS */
+app.use("/", otherRoutes);
+app.use("/", authRoutes);
+app.use("/", cartRoutes);
+app.use("/", productDetail);
+
+
+
+/* SERVER */
 app.listen(port, () => console.log(`http://localhost:${port}`))

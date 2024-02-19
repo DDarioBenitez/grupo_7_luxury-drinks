@@ -23,6 +23,6 @@
   font-family: "Poppins", sans-serif;
 }
 :root {
-  --colornegro: #191717;
-  --colorletra: #ccc8aa;
+  --colornegro: var(--negro);
+  --colorletra: var(--letrasHeader);
 }

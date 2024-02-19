@@ -3,7 +3,7 @@ body{
 }
 footer.home-footer{
     background-color:var(--colornegro);
-    color: #ccc8aa;
+    color: var(--letrasHeader);
 }
 
 footer.home-footer figure{
@@ -26,7 +26,7 @@ footer.home-footer nav.links-footer ul.footer-links{
    padding: 0;
    display: flex;
    justify-content: space-around;
-   color: #ccc8aa;
+   color: var(--letrasHeader);
 }
 
 footer.home-footer nav.links-footer ul.footer-links li{
@@ -34,7 +34,7 @@ footer.home-footer nav.links-footer ul.footer-links li{
 }
 
 footer.home-footer nav.links-footer ul.footer-links a{
-    color: #ccc8aa;
+    color: var(--letrasHeader);
     font-size: 14px;
 }
 
@@ -53,7 +53,7 @@ footer.home-footer nav.links-footer-contacto ul.footer-links{
 }
 
 footer.home-footer nav.links-footer-contacto ul.footer-links a{
-    color: #ccc8aa;
+    color: var(--letrasHeader);
 }
 
 footer.home-footer nav.links-footer-contacto ul.footer-links a i{
@@ -65,7 +65,7 @@ footer.home-footer nav.links-footer-contacto ul.footer-links a i{
 footer.home-footer nav.links-footer ul.footer-links-contacto li{}
 
 footer.home-footer nav.links-footer ul.footer-links-contacto li a{
-    color: #ccc8aa;
+    color: var(--letrasHeader);
 }
 
 footer.home-footer div.div-footer{
