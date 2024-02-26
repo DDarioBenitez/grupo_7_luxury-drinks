@@ -19,6 +19,7 @@ const cartRoutes = require("./routes/cart.routes");
 const productDetail = require("./routes/products.routes");
 
 
+
 /* RUTAS */
 app.use("/", otherRoutes);
 app.use("/", authRoutes);
