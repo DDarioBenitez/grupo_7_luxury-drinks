@@ -17,14 +17,14 @@ const otherRoutes = require("./routes/other.routes");
 const authRoutes = require("./routes/auth.routes");
 const cartRoutes = require("./routes/cart.routes");
 const productDetail = require("./routes/products.routes");
-
-
+const adminRoutes = require ("./routes/admin.routes")
 
 /* RUTAS */
 app.use("/", otherRoutes);
 app.use("/", authRoutes);
 app.use("/", cartRoutes);
 app.use("/", productDetail);
+app.use("/", adminRoutes);
 
 
 
