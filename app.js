@@ -26,6 +26,8 @@ app.use("/", otherRoutes);
 app.use("/", authRoutes);
 app.use("/", cartRoutes);
 app.use("/", productDetail);
+app.use("/", adminRoutes);
+app.use("/", dashboard)
 
 
 
