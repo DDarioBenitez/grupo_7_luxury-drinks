@@ -9,7 +9,8 @@ router.get("/lista-de-productos", adminController.listProducts);
 
 router.get("/crear-producto", adminController.createProduct);
 
-router.get("/editar-producto", adminController.updateProduct);
+router.get("/editar-producto/:id", adminController.editProduct);
+router.put("/editar-producto/:id", adminController.updateProduct);
 
 router.get("/eliminar-producto", adminController.deleteProduct);
 
