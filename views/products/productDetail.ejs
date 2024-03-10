@@ -7,7 +7,7 @@
   <%- include("../partials/header")%>
 
   <main class="product-detail">
-    <h2 class="h6 p-4">Ballentine´s scotch Whisky Escoces</h2>
+    <h2 class="h6 p-4"><%= product.name %></h2>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -20,14 +20,14 @@
       </div>
       <div class="carousel-inner" style="height: 250px;">
         <div class="carousel-item active h-100">
-          <img src="/images/Whisky_Ballantines_Finest_Blended_Scotch_700ml.webp" class="d-block w-100 h-100" alt="..."
+          <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..."
             style="object-fit: contain;">
         </div>
         <div class="carousel-item h-100">
-          <img src="/images/BALLENTINES.jpeg" class="d-block w-100 h-100" alt="..." style="object-fit: contain;">
+          <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..." style="object-fit: contain;">
         </div>
         <div class="carousel-item h-100">
-          <img src="/images/ballentines2.jpg" class="d-block w-100 h-100" alt="..." style="object-fit: contain;">
+          <img src="/images/products/<%= product.image %>" class="d-block w-100 h-100" alt="..." style="object-fit: contain;">
         </div>
       </div>
       <button class="carousel-control-prev" class="poi-custom-rounder" type="button"
@@ -52,8 +52,8 @@
     </div>
 
     <div class="produc-Precio ">
-      <p class="m-0">$20.000</p>
-      <p class="m-0">En 4x $5.000</p>
+      <p class="m-0"><%= product.price %></p>
+      <p class="m-0">Con <%= product.discount %>% queda en: <%= toThousand((product.price - (product.price * product.discount) / 100))%></p>
       <p class="m-0">ver los medios de pago</p>
       <div><a href="/Carrito">Agregar a carrito</a></div>
     </div>
@@ -62,7 +62,7 @@
       <h5>Caracteristas</h5>
 
       <ul>
-        <li>Whisky Ballantine´s 700ml</li>
+        <li><%= product.name %></li>
         <li>Incluye estuche</li>
         <li>Graduacion alcoholica del 40%</li>
         <li>Botella de vidrio, conserva mejor el sabor</li>
@@ -75,7 +75,7 @@
 
       <section class="Products-similares-1 ">
         <figure class="figure-product" style="height: 100px;">
-          <img src="/images/White_Horse_Fine_Old_Blended_Scotch.webp" class="w-100 h-100 " style="object-fit: contain;"
+          <img src="/images/products/White_Horse_Fine_Old_Blended_Scotch.webp" class="w-100 h-100 " style="object-fit: contain;"
             alt="">
         </figure>
         <p class="m-0">White Horse Fine </p>
@@ -83,7 +83,7 @@
 
       <section class="Products-similares">
         <figure class="figure-product" style="height: 100px;">
-          <img src="/images/Johnnie_Walker_Swing_Escoces_Blended_750ml.png" class="w-100 h-100"
+          <img src="/images/products/Johnnie_Walker_Swing_Escoces_Blended_750ml.png" class="w-100 h-100"
             style="object-fit: contain;" alt="">
         </figure>
         <p class="m-0">Johnnie Walker Escoces </p>
@@ -91,7 +91,7 @@
 
       <section class="Products-similares-3 ">
         <figure class="figure-product" style="height: 100px;">
-          <img src="/images/Champagne_Norton_extra_brut_750ml.webp" class="w-100 h-100" style="object-fit: contain;"
+          <img src="/images/products/Champagne_Norton_extra_brut_750ml.webp" class="w-100 h-100" style="object-fit: contain;"
             alt="">
         </figure>
         <p class="m-0">Champagne Norton </p>
@@ -99,7 +99,7 @@
 
       <section class="Products-similares-4">
         <figure class="figure-product" style="height: 100px;">
-          <img src="/images/Angelica_Zapata_Malbec_Alta_750cc.webp" class="w-100 h-100" style="object-fit: contain;"
+          <img src="/images/products/Angelica_Zapata_Malbec_Alta_750cc.webp" class="w-100 h-100" style="object-fit: contain;"
             alt="">
         </figure>
         <p class="m-0">Malbec Angelica</p>
