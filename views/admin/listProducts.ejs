@@ -5,22 +5,10 @@
 
     <%- include("../partials/header")%>
 
-    <% products.forEach(p => { %>
-        <div class="products">
-            <article class="product-2 popular">
-                <figure>
-                    <img src="/images/products/<%= p.image %>" alt="">
-                </figure>
-                <div class="product-details">
-                    <ul>
-                        <li class="price-actual"><%= p.price %></li>
-                        <li class="discount">10% OFF</li>
-                    </ul>
-                    <h5><%= p.name %></h5>
-                </div>
-            </article>
-        </div>
-    <% }) %>
+    <section class="all-products">
+        <h1>vista de productos</h1>
+    </section>
+    
 
     <%- include("../partials/footer")%>
     
