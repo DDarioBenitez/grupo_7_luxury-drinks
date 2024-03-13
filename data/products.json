@@ -64,21 +64,21 @@
    },
    {
       "id": 8,
-      "name": "Angelina Zapata Malbec 750ml",
+      "name": "Vino Tinto Fond De Cave Malbec Trapiche 750ml",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 15900,
       "discount": 10,
       "category": "vinos",
-      "image": "Angelica_Zapata_Malbec_Alta_750cc.webp"
+      "image": "Vino_Tinto_Fond_De_Cave_Malbec_Trapiche_750ml.png"
    },
    {
       "id": 9,
-      "name": "Tinto Luigi Bosca Malbec 750ml",
+      "name": "Mosquita Muerta Blend De Tintas 750 Ml",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "price": 4175,
       "discount": 25,
       "category": "vinos",
-      "image": "Tinto_Luigi_Bosca_Malbec_750ml.webp"
+      "image": "Vino_Mosquita_Muerta_Blend_De_Tintas_750_Ml.png"
    },
    {
       "id": 10,
