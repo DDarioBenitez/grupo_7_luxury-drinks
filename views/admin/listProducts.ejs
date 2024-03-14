@@ -31,52 +31,77 @@
                             <th scope="col">Id</th>
                             <th scope="col">Nombre</th>
                             <th scope="col">Price</th>
-                            <th scope="col">Stock</th>
                             <th scope="col">Categoria</th>
-                            <th colspan="3"></th>
                         </tr>
                     </thead>
                     <tbody class="table-group-divider" id="tbody_dinamic">
-                        <tr>
-                            <th scope="row">1</th>
-                            <td class="text-center">Whisky Ballantine´s 700ml</td>
-                            <td class="text-center">Incluye estuche, Graduacion alcoholica del 40%, Botella de vidrio,
-                                conserva
-                                mejor el
-                                sabor</td>
-                            <td class="text-center">$20.000</td>
-                            <td class="text-center">200</td>
-                            <td class="text-center">Whiskies</td>
-                            <td><button class="btn btn-primary"><i class="bi bi-pen"></i></button>
-                            </td>
-                            <td> <button class="btn btn-danger"><i class="bi bi-trash"></i></button></td>
-                            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal2">
-                                    Launch demo modal
-                                </button>
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="exampleModal2" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                ...
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary"
-                                                    data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                            </div>
+                        
+                            <% products.forEach(p=> { %>
+                                <tr>
+                                    <th scope="row">
+                                        <%= p.id %>
+                                    </th>
+                                    <td class="text-center">
+                                        <%= p.name %>
+                                    </td>
+                                    <td class="text-center">
+                                        <%= p.price %>
+                                    </td>
+                                    <td class="text-center">
+                                        <%= p.category %>
+                                    </td>
+                                    <td><button class="btn btn-primary"><i class="bi bi-pen"></i></button>
+                                    </td>
+                                    <td>
+                                        <form action="/admin/eliminar-producto/<%= p.id %>?_method=DELETE"
+                                            method="POST">
+                                            <button type="submit" class="btn btn-danger"><i class="bi bi-trash"></i></button>
+                                        </form>
+                                        
+                                    </td>
+                                    <div class="alert-delete">
+                                        <div class="alert-container">
+                                            <h2>¿Seguro que quieres eliminar este producto?</h2>
+                                            <form action="/admin/eliminar-producto/<%= p.id %>?_method=DELETE"
+                                                method="POST">
+                                                <button type="submit" class="action-button delete">Eliminar</button>
+                                                <button class="action-button btn-cancel">Cancelar</button>
+                                            </form>
                                         </div>
                                     </div>
-                                </div>
-                            </td>
+                                </th>
+                                <% }) %>
+                                
+
+                                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal2">
+                                            Launch demo modal
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal2" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title
+                                                        </h1>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-primary">Save
+                                                            changes</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                         </tr>
                     </tbody>
                 </table>
@@ -185,6 +210,7 @@
             }
         })
     </script>
+    <script src="../../public/js/alertDelete.js"></script>
 </body>
 
 </html>

@@ -12,7 +12,8 @@ router.get("/crear-producto", adminController.createProduct);
 router.get("/editar-producto/:id", adminController.editProduct);
 router.put("/editar-producto/:id", adminController.updateProduct);
 
-router.get("/eliminar-producto", adminController.deleteProduct);
+
+router.delete("/eliminar-producto/:id", adminController.deleteProduct);
 
 
 module.exports = router;
