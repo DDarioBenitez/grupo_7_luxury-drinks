@@ -45,14 +45,14 @@
     <div class="card-custom">
       <div class="card-body">
         <p class="card-text">Envios A todo el pais</p>
-        <p class="card-text">Cantidad disponible: x20 </p>
+        <p class="card-text">Cantidad disponible:<%= p.stock %> </p>
         <p class="card-text">Sin impuestos, Ni retenciones</p>
         <a href="/Carrito" class="btn btn-dark ">Agregar a Carrito</a>
       </div>
     </div>
 
     <div class="produc-Precio ">
-      <p class="m-0">$20.000</p>
+      <p class="m-0">$<%= p.price %></p>
       <p class="m-0">En 4x $5.000</p>
       <p class="m-0">ver los medios de pago</p>
       <div><a href="/Carrito">Agregar a carrito</a></div>
