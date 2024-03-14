@@ -9,7 +9,7 @@ module.exports=(req,res)=>{
     const productsLessOne = products.filter(p => p.id !== +id)
     const productDestroy = products.find(p => p.id == +id)
 
-    const pathFile = path.join(__dirname, "../../../public/images/products" + productDestroy.image);
+    const pathFile = path.join(__dirname, "/public/images/products" + productDestroy.image);
 
     const existFile = fs.existsSync(pathFile)
     if(existFile){
@@ -18,5 +18,5 @@ module.exports=(req,res)=>{
 
     saveData(productsLessOne)
 
-    res.redirect('admin/lista-de-productos')
+    res.redirect('/')
 }
