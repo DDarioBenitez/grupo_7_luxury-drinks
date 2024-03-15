@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <%- include("../partials/head")%>
+  <%- include("../partials/head", {title: 'Editando: ' + product.name})%>
 
 <body>
 
@@ -16,36 +16,37 @@
 
     <div class="card  container mb-4" style="width: 40rem;">
     
-    <form action="" class="row ">
+    <form action="/admin/editar-producto/<%= product.id%>?_method=PUT" class="row ">
       <div class=" col-12">
         <label for="text" class="form-label"></label>
-        <input type="text" class="form-control" placeholder="Titulo">
+        <input type="text" class="form-control" placeholder="Titulo" value="<%= product.name %>">
       </div>
 
       <div class="mb-3 col-6">
         <label for="precio" class="form-label"></label>
-        <input type="number" class="form-control" id="precio" placeholder="Precio">
+        <input type="number" class="form-control" id="precio" placeholder="Precio" value="<%= product.price %>">
       </div>
 
       <div class="mb-3 col-6">
         <label for="Descuento" class="form-label"></label>
-        <input type="number" class="form-control" id="Descuento" placeholder="Descuento">
+        <input type="number" class="form-control" id="Descuento" placeholder="Descuento" value="<%= product.discount %>">
       </div>
 
       <div class="mb-3 form-floating col-6 p-1">
         <select class="form-select" id="floatingSelect" aria-label="Selecciona Categoria">
           <option selected hidden>Selecciona Categoría</option>
-          <option value="1">Espumantes</option>
-          <option value="2">Latas</option>
-          <option value="3">Cerveza</option>
-          <option value="3">Licores</option>
-          <option value="3">Vinos</option>
+          <option value="<%= product.category === "Champagne" ? "selected" : null %>">Champagne</option>
+          <option value="<%= product.category === "Gin" ? "selected" : null %>">Gin</option>
+          <option value="<%= product.category === "Ron" ? "selected" : null %>">Ron</option>
+          <option value="<%= product.category === "Tequila" ? "selected" : null %>">Tequila</option>
+          <option value="<%= product.category === "Whisky" ? "selected" : null %>">Whisky</option>
+          <option value="<%= product.category === "Cerveza" ? "selected" : null %>">Cerveza</option>
         </select>
         <label for="floatingSelect">Desplegar las opciones</label>
       </div>
 
       <div class="mb-2  p-1 form-floating col-6">
-        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"><%= product.description %></textarea>
         <label for="floatingTextarea">Descripción</label>
       </div>
 

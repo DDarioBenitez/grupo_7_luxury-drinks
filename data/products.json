@@ -1,452 +1,452 @@
 [
-   {
-      "id": 1,
-      "name": "Whisky Escocés",
-      "description": "Whisky de malta escocesa",
-      "price": 2500,
-      "stock": 50,
-      "image": "whisky.png",
-      "category": "Whisky"
-   },
-   {
-      "id": 2,
-      "name": "Vino Tinto Reserva",
-      "description": "Vino tinto reserva de la región de Mendoza",
-      "price": 1200,
-      "stock": 80,
-      "image": "vino_tinto.png",
-      "category": "Vino"
-   },
-   {
-      "id": 3,
-      "name": "Champagne Brut",
-      "description": "Champagne brut francés",
-      "price": 3500,
-      "stock": 30,
-      "image": "champagne.png",
-      "category": "Champagne"
-   },
-   {
-      "id": 4,
-      "name": "Vodka Premium",
-      "description": "Vodka premium destilado varias veces",
-      "price": 1800,
-      "stock": 60,
-      "image": "vodka.png",
-      "category": "Vodka"
-   },
-   {
-      "id": 5,
-      "name": "Gin Artesanal",
-      "description": "Gin artesanal con botánicos selectos",
-      "price": 2000,
-      "stock": 40,
-      "image": "gin.png",
-      "category": "Gin"
-   },
-   {
-      "id": 6,
-      "name": "Ron Añejo",
-      "description": "Ron añejo de las Islas del Caribe",
-      "price": 1500,
-      "stock": 70,
-      "image": "ron.png",
-      "category": "Ron"
-   },
-   {
-      "id": 7,
-      "name": "Cerveza Artesanal",
-      "description": "Cerveza artesanal de lúpulos seleccionados",
-      "price": 800,
-      "stock": 90,
-      "image": "cerveza_artesanal.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 8,
-      "name": "Tequila Reposado",
-      "description": "Tequila reposado de agave azul",
-      "price": 2800,
-      "stock": 25,
-      "image": "tequila.png",
-      "category": "Tequila"
-   },
-   {
-      "id": 9,
-      "name": "Chardonnay",
-      "description": "Vino blanco Chardonnay",
-      "price": 1800,
-      "stock": 35,
-      "image": "chardonnay.png",
-      "category": "Vino"
-   },
-   {
-      "id": 10,
-      "name": "Cognac XO",
-      "description": "Cognac extra añejo",
-      "price": 4000,
-      "stock": 20,
-      "image": "cognac_xo.png",
-      "category": "Cognac"
-   },
-   {
-      "id": 11,
-      "name": "Cerveza IPA",
-      "description": "Cerveza India Pale Ale",
-      "price": 1000,
-      "stock": 55,
-      "image": "cerveza_ipa.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 12,
-      "name": "Prosecco",
-      "description": "Vino espumoso italiano",
-      "price": 2200,
-      "stock": 45,
-      "image": "prosecco.png",
-      "category": "Vino"
-   },
-   {
-      "id": 13,
-      "name": "Ginebra Clásica",
-      "description": "Ginebra clásica de enebro",
-      "price": 1900,
-      "stock": 65,
-      "image": "ginebra_clasica.png",
-      "category": "Gin"
-   },
-   {
-      "id": 14,
-      "name": "Whisky Irlandés",
-      "description": "Whisky de malta irlandesa",
-      "price": 2700,
-      "stock": 30,
-      "image": "whisky_irlandes.png",
-      "category": "Whisky"
-   },
-   {
-      "id": 15,
-      "name": "Vodka de Lujo",
-      "description": "Vodka de lujo filtrado multiple veces",
-      "price": 3000,
-      "stock": 40,
-      "image": "vodka_lujo.png",
-      "category": "Vodka"
-   },
-   {
-      "id": 16,
-      "name": "Cabernet Sauvignon",
-      "description": "Vino tinto Cabernet Sauvignon",
-      "price": 1600,
-      "stock": 60,
-      "image": "cabernet_sauvignon.png",
-      "category": "Vino"
-   },
-   {
-      "id": 17,
-      "name": "Champagne Rosado",
-      "description": "Champagne rosado francés",
-      "price": 3800,
-      "stock": 25,
-      "image": "champagne_rosado.png",
-      "category": "Champagne"
-   },
-   {
-      "id": 18,
-      "name": "Gin de Frutas",
-      "description": "Gin con infusiones de frutas",
-      "price": 2200,
-      "stock": 50,
-      "image": "gin_frutas.png",
-      "category": "Gin"
-   },
-   {
-      "id": 19,
-      "name": "Ron Blanco",
-      "description": "Ron blanco de las Islas del Caribe",
-      "price": 1200,
-      "stock": 70,
-      "image": "ron_blanco.png",
-      "category": "Ron"
-   },
-   {
-      "id": 20,
-      "name": "Cerveza Stout",
-      "description": "Cerveza Stout de cuerpo completo",
-      "price": 1100,
-      "stock": 55,
-      "image": "cerveza_stout.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 21,
-      "name": "Malbec Reserva",
-      "description": "Vino tinto Malbec reserva",
-      "price": 1400,
-      "stock": 75,
-      "image": "malbec_reserva.png",
-      "category": "Vino"
-   },
-   {
-      "id": 22,
-      "name": "Vodka Saborizado",
-      "description": "Vodka con sabores naturales",
-      "price": 2000,
-      "stock": 35,
-      "image": "vodka_saborizado.png",
-      "category": "Vodka"
-   },
-   {
-      "id": 23,
-      "name": "Ginebra Floral",
-      "description": "Ginebra con toques florales",
-      "price": 2300,
-      "stock": 45,
-      "image": "ginebra_floral.png",
-      "category": "Gin"
-   },
-   {
-      "id": 24,
-      "name": "Whisky Bourbon",
-      "description": "Whisky Bourbon americano",
-      "price": 2600,
-      "stock": 30,
-      "image": "whisky_bourbon.png",
-      "category": "Whisky"
-   },
-   {
-      "id": 25,
-      "name": "Tequila Añejo",
-      "description": "Tequila añejo de agave azul",
-      "price": 3200,
-      "stock": 20,
-      "image": "tequila_anejo.png",
-      "category": "Tequila"
-   },
-   {
-      "id": 26,
-      "name": "Cerveza Pale Ale",
-      "description": "Cerveza Pale Ale aromática",
-      "price": 950,
-      "stock": 65,
-      "image": "cerveza_pale_ale.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 27,
-      "name": "Syrah",
-      "description": "Vino tinto Syrah de la región de Salta",
-      "price": 1700,
-      "stock": 40,
-      "image": "syrah.png",
-      "category": "Vino"
-   },
-   {
-      "id": 28,
-      "name": "Champagne Extra Brut",
-      "description": "Champagne extra brut premium",
-      "price": 4000,
-      "stock": 25,
-      "image": "champagne_extra_brut.png",
-      "category": "Champagne"
-   },
-   {
-      "id": 29,
-      "name": "Gin de Pimienta Rosa",
-      "description": "Gin con notas de pimienta rosa",
-      "price": 2400,
-      "stock": 50,
-      "image": "gin_pimienta_rosa.png",
-      "category": "Gin"
-   },
-   {
-      "id": 30,
-      "name": "Ron Dorado",
-      "description": "Ron dorado de las Islas del Caribe",
-      "price": 1300,
-      "stock": 60,
-      "image": "ron_dorado.png",
-      "category": "Ron"
-   },
-   {
-      "id": 31,
-      "name": "Cerveza Belgian Tripel",
-      "description": "Cerveza belga estilo Tripel",
-      "price": 1200,
-      "stock": 70,
-      "image": "cerveza_belgian_tripel.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 32,
-      "name": "Merlot",
-      "description": "Vino tinto Merlot",
-      "price": 1400,
-      "stock": 55,
-      "image": "merlot.png",
-      "category": "Vino"
-   },
-   {
-      "id": 33,
-      "name": "Vodka de Trigo",
-      "description": "Vodka destilado de trigo",
-      "price": 2100,
-      "stock": 45,
-      "image": "vodka_trigo.png",
-      "category": "Vodka"
-   },
-   {
-      "id": 34,
-      "name": "Ginebra de Hierbas",
-      "description": "Ginebra infusionada con hierbas",
-      "price": 2500,
-      "stock": 35,
-      "image": "ginebra_hierbas.png",
-      "category": "Gin"
-   },
-   {
-      "id": 35,
-      "name": "Whisky Single Malt",
-      "description": "Whisky Single Malt escocés",
-      "price": 3000,
-      "stock": 30,
-      "image": "whisky_single_malt.png",
-      "category": "Whisky"
-   },
-   {
-      "id": 36,
-      "name": "Tequila Blanco",
-      "description": "Tequila blanco de agave azul",
-      "price": 2600,
-      "stock": 40,
-      "image": "tequila_blanco.png",
-      "category": "Tequila"
-   },
-   {
-      "id": 37,
-      "name": "Cerveza Wheat Beer",
-      "description": "Cerveza de trigo refrescante",
-      "price": 1000,
-      "stock": 80,
-      "image": "cerveza_wheat_beer.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 38,
-      "name": "Malbec Gran Reserva",
-      "description": "Vino tinto Malbec gran reserva",
-      "price": 2000,
-      "stock": 25,
-      "image": "malbec_gran_reserva.png",
-      "category": "Vino"
-   },
-   {
-      "id": 39,
-      "name": "Vodka de Centeno",
-      "description": "Vodka destilado de centeno",
-      "price": 1900,
-      "stock": 50,
-      "image": "vodka_centeno.png",
-      "category": "Vodka"
-   },
-   {
-      "id": 40,
-      "name": "Gin de Enebro Salvaje",
-      "description": "Gin con enebro salvaje",
-      "price": 2300,
-      "stock": 30,
-      "image": "gin_enebro_salvaje.png",
-      "category": "Gin"
-   },
-   {
-      "id": 41,
-      "name": "Whisky Blended",
-      "description": "Whisky blended escocés",
-      "price": 2200,
-      "stock": 40,
-      "image": "whisky_blended.png",
-      "category": "Whisky"
-   },
-   {
-      "id": 42,
-      "name": "Tequila Extra Añejo",
-      "description": "Tequila extra añejo de agave azul",
-      "price": 3500,
-      "stock": 20,
-      "image": "tequila_extra_anejo.png",
-      "category": "Tequila"
-   },
-   {
-      "id": 43,
-      "name": "Cerveza Sour",
-      "description": "Cerveza estilo Sour de frutas",
-      "price": 1100,
-      "stock": 65,
-      "image": "cerveza_sour.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 44,
-      "name": "Cabernet Franc",
-      "description": "Vino tinto Cabernet Franc",
-      "price": 1700,
-      "stock": 35,
-      "image": "cabernet_franc.png",
-      "category": "Vino"
-   },
-   {
-      "id": 45,
-      "name": "Ginebra de Lima",
-      "description": "Ginebra con toques de lima",
-      "price": 2400,
-      "stock": 45,
-      "image": "ginebra_lima.png",
-      "category": "Gin"
-   },
-   {
-      "id": 46,
-      "name": "Ron Reserva Especial",
-      "description": "Ron reserva especial de las Islas del Caribe",
-      "price": 2800,
-      "stock": 30,
-      "image": "ron_reserva_especial.png",
-      "category": "Ron"
-   },
-   {
-      "id": 47,
-      "name": "Cerveza Pilsner",
-      "description": "Cerveza Pilsner tradicional",
-      "price": 950,
-      "stock": 70,
-      "image": "cerveza_pilsner.png",
-      "category": "Cerveza"
-   },
-   {
-      "id": 48,
-      "name": "Syrah Reserva",
-      "description": "Vino tinto Syrah reserva",
-      "price": 1900,
-      "stock": 40,
-      "image": "syrah_reserva.png",
-      "category": "Vino"
-   },
-   {
-      "id": 49,
-      "name": "Vodka de Patata",
-      "description": "Vodka destilado de patata",
-      "price": 2100,
-      "stock": 55,
-      "image": "vodka_patata.png",
-      "category": "Vodka"
-   },
-   {
-      "id": 50,
-      "name": "Gin de Lavanda",
-      "description": "Gin con infusiones de lavanda",
-      "price": 2600,
-      "stock": 50,
-      "image": "gin_lavanda.png",
-      "category": "Gin"
-   }
+  {
+    "id": 1,
+    "name": "Whisky Escocés",
+    "description": "Whisky de malta escocesa",
+    "price": 2500,
+    "stock": 50,
+    "image": "whisky.png",
+    "category": "Whisky"
+  },
+  {
+    "id": 2,
+    "name": "Vino Tinto Reserva",
+    "description": "Vino tinto reserva de la región de Mendoza",
+    "price": 1200,
+    "stock": 80,
+    "image": "vino_tinto.png",
+    "category": "Vino"
+  },
+  {
+    "id": 3,
+    "name": "Champagne Brut",
+    "description": "Champagne brut francés",
+    "price": 3500,
+    "stock": 30,
+    "image": "champagne.png",
+    "category": "Champagne"
+  },
+  {
+    "id": 4,
+    "name": "Vodka Premium",
+    "description": "Vodka premium destilado varias veces",
+    "price": 1800,
+    "stock": 60,
+    "image": "vodka.png",
+    "category": "Vodka"
+  },
+  {
+    "id": 5,
+    "name": "Gin Artesanal",
+    "description": "Gin artesanal con botánicos selectos",
+    "price": 2000,
+    "stock": 40,
+    "image": "gin.png",
+    "category": "Gin"
+  },
+  {
+    "id": 6,
+    "name": "Ron Añejo",
+    "description": "Ron añejo de las Islas del Caribe",
+    "price": 1500,
+    "stock": 70,
+    "image": "ron.png",
+    "category": "Ron"
+  },
+  {
+    "id": 7,
+    "name": "Cerveza Artesanal",
+    "description": "Cerveza artesanal de lúpulos seleccionados",
+    "price": 800,
+    "stock": 90,
+    "image": "cerveza_artesanal.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 8,
+    "name": "Tequila Reposado",
+    "description": "Tequila reposado de agave azul",
+    "price": 2800,
+    "stock": 25,
+    "image": "tequila.png",
+    "category": "Tequila"
+  },
+  {
+    "id": 9,
+    "name": "Chardonnay",
+    "description": "Vino blanco Chardonnay",
+    "price": 1800,
+    "stock": 35,
+    "image": "chardonnay.png",
+    "category": "Vino"
+  },
+  {
+    "id": 10,
+    "name": "Cognac XO",
+    "description": "Cognac extra añejo",
+    "price": 4000,
+    "stock": 20,
+    "image": "cognac_xo.png",
+    "category": "Cognac"
+  },
+  {
+    "id": 11,
+    "name": "Cerveza IPA",
+    "description": "Cerveza India Pale Ale",
+    "price": 1000,
+    "stock": 55,
+    "image": "cerveza_ipa.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 12,
+    "name": "Prosecco",
+    "description": "Vino espumoso italiano",
+    "price": 2200,
+    "stock": 45,
+    "image": "prosecco.png",
+    "category": "Vino"
+  },
+  {
+    "id": 13,
+    "name": "Ginebra Clásica",
+    "description": "Ginebra clásica de enebro",
+    "price": 1900,
+    "stock": 65,
+    "image": "ginebra_clasica.png",
+    "category": "Gin"
+  },
+  {
+    "id": 14,
+    "name": "Whisky Irlandés",
+    "description": "Whisky de malta irlandesa",
+    "price": 2700,
+    "stock": 30,
+    "image": "whisky_irlandes.png",
+    "category": "Whisky"
+  },
+  {
+    "id": 15,
+    "name": "Vodka de Lujo",
+    "description": "Vodka de lujo filtrado multiple veces",
+    "price": 3000,
+    "stock": 40,
+    "image": "vodka_lujo.png",
+    "category": "Vodka"
+  },
+  {
+    "id": 16,
+    "name": "Cabernet Sauvignon",
+    "description": "Vino tinto Cabernet Sauvignon",
+    "price": 1600,
+    "stock": 60,
+    "image": "cabernet_sauvignon.png",
+    "category": "Vino"
+  },
+  {
+    "id": 17,
+    "name": "Champagne Rosado",
+    "description": "Champagne rosado francés",
+    "price": 3800,
+    "stock": 25,
+    "image": "champagne_rosado.png",
+    "category": "Champagne"
+  },
+  {
+    "id": 18,
+    "name": "Gin de Frutas",
+    "description": "Gin con infusiones de frutas",
+    "price": 2200,
+    "stock": 50,
+    "image": "gin_frutas.png",
+    "category": "Gin"
+  },
+  {
+    "id": 19,
+    "name": "Ron Blanco",
+    "description": "Ron blanco de las Islas del Caribe",
+    "price": 1200,
+    "stock": 70,
+    "image": "ron_blanco.png",
+    "category": "Ron"
+  },
+  {
+    "id": 20,
+    "name": "Cerveza Stout",
+    "description": "Cerveza Stout de cuerpo completo",
+    "price": 1100,
+    "stock": 55,
+    "image": "cerveza_stout.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 21,
+    "name": "Malbec Reserva",
+    "description": "Vino tinto Malbec reserva",
+    "price": 1400,
+    "stock": 75,
+    "image": "malbec_reserva.png",
+    "category": "Vino"
+  },
+  {
+    "id": 22,
+    "name": "Vodka Saborizado",
+    "description": "Vodka con sabores naturales",
+    "price": 2000,
+    "stock": 35,
+    "image": "vodka_saborizado.png",
+    "category": "Vodka"
+  },
+  {
+    "id": 23,
+    "name": "Ginebra Floral",
+    "description": "Ginebra con toques florales",
+    "price": 2300,
+    "stock": 45,
+    "image": "ginebra_floral.png",
+    "category": "Gin"
+  },
+  {
+    "id": 24,
+    "name": "Whisky Bourbon",
+    "description": "Whisky Bourbon americano",
+    "price": 2600,
+    "stock": 30,
+    "image": "whisky_bourbon.png",
+    "category": "Whisky"
+  },
+  {
+    "id": 25,
+    "name": "Tequila Añejo",
+    "description": "Tequila añejo de agave azul",
+    "price": 3200,
+    "stock": 20,
+    "image": "tequila_anejo.png",
+    "category": "Tequila"
+  },
+  {
+    "id": 26,
+    "name": "Cerveza Pale Ale",
+    "description": "Cerveza Pale Ale aromática",
+    "price": 950,
+    "stock": 65,
+    "image": "cerveza_pale_ale.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 27,
+    "name": "Syrah",
+    "description": "Vino tinto Syrah de la región de Salta",
+    "price": 1700,
+    "stock": 40,
+    "image": "syrah.png",
+    "category": "Vino"
+  },
+  {
+    "id": 28,
+    "name": "Champagne Extra Brut",
+    "description": "Champagne extra brut premium",
+    "price": 4000,
+    "stock": 25,
+    "image": "champagne_extra_brut.png",
+    "category": "Champagne"
+  },
+  {
+    "id": 29,
+    "name": "Gin de Pimienta Rosa",
+    "description": "Gin con notas de pimienta rosa",
+    "price": 2400,
+    "stock": 50,
+    "image": "gin_pimienta_rosa.png",
+    "category": "Gin"
+  },
+  {
+    "id": 30,
+    "name": "Ron Dorado",
+    "description": "Ron dorado de las Islas del Caribe",
+    "price": 1300,
+    "stock": 60,
+    "image": "ron_dorado.png",
+    "category": "Ron"
+  },
+  {
+    "id": 31,
+    "name": "Cerveza Belgian Tripel",
+    "description": "Cerveza belga estilo Tripel",
+    "price": 1200,
+    "stock": 70,
+    "image": "cerveza_belgian_tripel.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 32,
+    "name": "Merlot",
+    "description": "Vino tinto Merlot",
+    "price": 1400,
+    "stock": 55,
+    "image": "merlot.png",
+    "category": "Vino"
+  },
+  {
+    "id": 33,
+    "name": "Vodka de Trigo",
+    "description": "Vodka destilado de trigo",
+    "price": 2100,
+    "stock": 45,
+    "image": "vodka_trigo.png",
+    "category": "Vodka"
+  },
+  {
+    "id": 34,
+    "name": "Ginebra de Hierbas",
+    "description": "Ginebra infusionada con hierbas",
+    "price": 2500,
+    "stock": 35,
+    "image": "ginebra_hierbas.png",
+    "category": "Gin"
+  },
+  {
+    "id": 35,
+    "name": "Whisky Single Malt",
+    "description": "Whisky Single Malt escocés",
+    "price": 3000,
+    "stock": 30,
+    "image": "whisky_single_malt.png",
+    "category": "Whisky"
+  },
+  {
+    "id": 36,
+    "name": "Tequila Blanco",
+    "description": "Tequila blanco de agave azul",
+    "price": 2600,
+    "stock": 40,
+    "image": "tequila_blanco.png",
+    "category": "Tequila"
+  },
+  {
+    "id": 37,
+    "name": "Cerveza Wheat Beer",
+    "description": "Cerveza de trigo refrescante",
+    "price": 1000,
+    "stock": 80,
+    "image": "cerveza_wheat_beer.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 38,
+    "name": "Malbec Gran Reserva",
+    "description": "Vino tinto Malbec gran reserva",
+    "price": 2000,
+    "stock": 25,
+    "image": "malbec_gran_reserva.png",
+    "category": "Vino"
+  },
+  {
+    "id": 39,
+    "name": "Vodka de Centeno",
+    "description": "Vodka destilado de centeno",
+    "price": 1900,
+    "stock": 50,
+    "image": "vodka_centeno.png",
+    "category": "Vodka"
+  },
+  {
+    "id": 40,
+    "name": "Gin de Enebro Salvaje",
+    "description": "Gin con enebro salvaje",
+    "price": 2300,
+    "stock": 30,
+    "image": "gin_enebro_salvaje.png",
+    "category": "Gin"
+  },
+  {
+    "id": 41,
+    "name": "Whisky Blended",
+    "description": "Whisky blended escocés",
+    "price": 2200,
+    "stock": 40,
+    "image": "whisky_blended.png",
+    "category": "Whisky"
+  },
+  {
+    "id": 42,
+    "name": "Tequila Extra Añejo",
+    "description": "Tequila extra añejo de agave azul",
+    "price": 3500,
+    "stock": 20,
+    "image": "tequila_extra_anejo.png",
+    "category": "Tequila"
+  },
+  {
+    "id": 43,
+    "name": "Cerveza Sour",
+    "description": "Cerveza estilo Sour de frutas",
+    "price": 1100,
+    "stock": 65,
+    "image": "cerveza_sour.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 44,
+    "name": "Cabernet Franc",
+    "description": "Vino tinto Cabernet Franc",
+    "price": 1700,
+    "stock": 35,
+    "image": "cabernet_franc.png",
+    "category": "Vino"
+  },
+  {
+    "id": 45,
+    "name": "Ginebra de Lima",
+    "description": "Ginebra con toques de lima",
+    "price": 2400,
+    "stock": 45,
+    "image": "ginebra_lima.png",
+    "category": "Gin"
+  },
+  {
+    "id": 46,
+    "name": "Ron Reserva Especial",
+    "description": "Ron reserva especial de las Islas del Caribe",
+    "price": 2800,
+    "stock": 30,
+    "image": "ron_reserva_especial.png",
+    "category": "Ron"
+  },
+  {
+    "id": 47,
+    "name": "Cerveza Pilsner",
+    "description": "Cerveza Pilsner tradicional",
+    "price": 950,
+    "stock": 70,
+    "image": "cerveza_pilsner.png",
+    "category": "Cerveza"
+  },
+  {
+    "id": 48,
+    "name": "Syrah Reserva",
+    "description": "Vino tinto Syrah reserva",
+    "price": 1900,
+    "stock": 40,
+    "image": "syrah_reserva.png",
+    "category": "Vino"
+  },
+  {
+    "id": 49,
+    "name": "Vodka de Patata",
+    "description": "Vodka destilado de patata",
+    "price": 2100,
+    "stock": 55,
+    "image": "vodka_patata.png",
+    "category": "Vodka"
+  },
+  {
+    "id": 50,
+    "name": "Gin de Lavanda",
+    "description": "Gin con infusiones de lavanda",
+    "price": 2600,
+    "stock": 50,
+    "image": "gin_lavanda.png",
+    "category": "Gin"
+  }
 ]
