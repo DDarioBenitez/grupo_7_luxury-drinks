@@ -6,7 +6,8 @@
     "price": 2500,
     "stock": 50,
     "image": "whisky.png",
-    "category": "Whisky"
+    "category": "Whisky",
+    "discount": 10
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "price": 1200,
     "stock": 80,
     "image": "vino_tinto.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "price": 3500,
     "stock": 30,
     "image": "champagne.png",
-    "category": "Champagne"
+    "category": "Champagne",
+    "discount": 10
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "price": 1800,
     "stock": 60,
     "image": "vodka.png",
-    "category": "Vodka"
+    "category": "Vodka",
+    "discount": 10
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "price": 2000,
     "stock": 40,
     "image": "gin.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 10
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "price": 1500,
     "stock": 70,
     "image": "ron.png",
-    "category": "Ron"
+    "category": "Ron",
+    "discount": 10
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "price": 800,
     "stock": 90,
     "image": "cerveza_artesanal.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 10
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "price": 2800,
     "stock": 25,
     "image": "tequila.png",
-    "category": "Tequila"
+    "category": "Tequila",
+    "discount": 10
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "price": 1800,
     "stock": 35,
     "image": "chardonnay.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 10,
@@ -87,7 +96,8 @@
     "price": 4000,
     "stock": 20,
     "image": "cognac_xo.png",
-    "category": "Cognac"
+    "category": "Cognac",
+    "discount": 10
   },
   {
     "id": 11,
@@ -96,7 +106,8 @@
     "price": 1000,
     "stock": 55,
     "image": "cerveza_ipa.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 10
   },
   {
     "id": 12,
@@ -105,7 +116,8 @@
     "price": 2200,
     "stock": 45,
     "image": "prosecco.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 13,
@@ -114,7 +126,8 @@
     "price": 1900,
     "stock": 65,
     "image": "ginebra_clasica.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 10
   },
   {
     "id": 14,
@@ -123,7 +136,8 @@
     "price": 2700,
     "stock": 30,
     "image": "whisky_irlandes.png",
-    "category": "Whisky"
+    "category": "Whisky",
+    "discount": 10
   },
   {
     "id": 15,
@@ -132,7 +146,8 @@
     "price": 3000,
     "stock": 40,
     "image": "vodka_lujo.png",
-    "category": "Vodka"
+    "category": "Vodka",
+    "discount": 10
   },
   {
     "id": 16,
@@ -141,7 +156,8 @@
     "price": 1600,
     "stock": 60,
     "image": "cabernet_sauvignon.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 17,
@@ -150,7 +166,8 @@
     "price": 3800,
     "stock": 25,
     "image": "champagne_rosado.png",
-    "category": "Champagne"
+    "category": "Champagne",
+    "discount": 10
   },
   {
     "id": 18,
@@ -159,7 +176,8 @@
     "price": 2200,
     "stock": 50,
     "image": "gin_frutas.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 10
   },
   {
     "id": 19,
@@ -168,7 +186,8 @@
     "price": 1200,
     "stock": 70,
     "image": "ron_blanco.png",
-    "category": "Ron"
+    "category": "Ron",
+    "discount": 10
   },
   {
     "id": 20,
@@ -177,7 +196,8 @@
     "price": 1100,
     "stock": 55,
     "image": "cerveza_stout.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 10
   },
   {
     "id": 21,
@@ -186,7 +206,8 @@
     "price": 1400,
     "stock": 75,
     "image": "malbec_reserva.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 22,
@@ -195,7 +216,8 @@
     "price": 2000,
     "stock": 35,
     "image": "vodka_saborizado.png",
-    "category": "Vodka"
+    "category": "Vodka",
+    "discount": 10
   },
   {
     "id": 23,
@@ -204,7 +226,8 @@
     "price": 2300,
     "stock": 45,
     "image": "ginebra_floral.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 10
   },
   {
     "id": 24,
@@ -213,7 +236,8 @@
     "price": 2600,
     "stock": 30,
     "image": "whisky_bourbon.png",
-    "category": "Whisky"
+    "category": "Whisky",
+    "discount": 10
   },
   {
     "id": 25,
@@ -222,7 +246,8 @@
     "price": 3200,
     "stock": 20,
     "image": "tequila_anejo.png",
-    "category": "Tequila"
+    "category": "Tequila",
+    "discount": 10
   },
   {
     "id": 26,
@@ -231,7 +256,8 @@
     "price": 950,
     "stock": 65,
     "image": "cerveza_pale_ale.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 10
   },
   {
     "id": 27,
@@ -240,7 +266,8 @@
     "price": 1700,
     "stock": 40,
     "image": "syrah.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 28,
@@ -249,7 +276,8 @@
     "price": 4000,
     "stock": 25,
     "image": "champagne_extra_brut.png",
-    "category": "Champagne"
+    "category": "Champagne",
+    "discount": 10
   },
   {
     "id": 29,
@@ -258,7 +286,8 @@
     "price": 2400,
     "stock": 50,
     "image": "gin_pimienta_rosa.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 10
   },
   {
     "id": 30,
@@ -267,7 +296,8 @@
     "price": 1300,
     "stock": 60,
     "image": "ron_dorado.png",
-    "category": "Ron"
+    "category": "Ron",
+    "discount": 10
   },
   {
     "id": 31,
@@ -276,7 +306,8 @@
     "price": 1200,
     "stock": 70,
     "image": "cerveza_belgian_tripel.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 10
   },
   {
     "id": 32,
@@ -285,7 +316,8 @@
     "price": 1400,
     "stock": 55,
     "image": "merlot.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 33,
@@ -294,7 +326,8 @@
     "price": 2100,
     "stock": 45,
     "image": "vodka_trigo.png",
-    "category": "Vodka"
+    "category": "Vodka",
+    "discount": 10
   },
   {
     "id": 34,
@@ -303,7 +336,8 @@
     "price": 2500,
     "stock": 35,
     "image": "ginebra_hierbas.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 10
   },
   {
     "id": 35,
@@ -312,7 +346,8 @@
     "price": 3000,
     "stock": 30,
     "image": "whisky_single_malt.png",
-    "category": "Whisky"
+    "category": "Whisky",
+    "discount": 10
   },
   {
     "id": 36,
@@ -321,7 +356,8 @@
     "price": 2600,
     "stock": 40,
     "image": "tequila_blanco.png",
-    "category": "Tequila"
+    "category": "Tequila",
+    "discount": 10
   },
   {
     "id": 37,
@@ -330,7 +366,8 @@
     "price": 1000,
     "stock": 80,
     "image": "cerveza_wheat_beer.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 15
   },
   {
     "id": 38,
@@ -339,7 +376,8 @@
     "price": 2000,
     "stock": 25,
     "image": "malbec_gran_reserva.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 10
   },
   {
     "id": 39,
@@ -348,7 +386,8 @@
     "price": 1900,
     "stock": 50,
     "image": "vodka_centeno.png",
-    "category": "Vodka"
+    "category": "Vodka",
+    "discount": 25
   },
   {
     "id": 40,
@@ -357,7 +396,8 @@
     "price": 2300,
     "stock": 30,
     "image": "gin_enebro_salvaje.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 30
   },
   {
     "id": 41,
@@ -366,7 +406,8 @@
     "price": 2200,
     "stock": 40,
     "image": "whisky_blended.png",
-    "category": "Whisky"
+    "category": "Whisky",
+    "discount": 25
   },
   {
     "id": 42,
@@ -375,7 +416,8 @@
     "price": 3500,
     "stock": 20,
     "image": "tequila_extra_anejo.png",
-    "category": "Tequila"
+    "category": "Tequila",
+    "discount": 5
   },
   {
     "id": 43,
@@ -384,7 +426,8 @@
     "price": 1100,
     "stock": 65,
     "image": "cerveza_sour.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 15
   },
   {
     "id": 44,
@@ -393,7 +436,8 @@
     "price": 1700,
     "stock": 35,
     "image": "cabernet_franc.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 20
   },
   {
     "id": 45,
@@ -402,7 +446,8 @@
     "price": 2400,
     "stock": 45,
     "image": "ginebra_lima.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 50
   },
   {
     "id": 46,
@@ -411,7 +456,8 @@
     "price": 2800,
     "stock": 30,
     "image": "ron_reserva_especial.png",
-    "category": "Ron"
+    "category": "Ron",
+    "discount": 20
   },
   {
     "id": 47,
@@ -420,7 +466,8 @@
     "price": 950,
     "stock": 70,
     "image": "cerveza_pilsner.png",
-    "category": "Cerveza"
+    "category": "Cerveza",
+    "discount": 30
   },
   {
     "id": 48,
@@ -429,7 +476,8 @@
     "price": 1900,
     "stock": 40,
     "image": "syrah_reserva.png",
-    "category": "Vino"
+    "category": "Vino",
+    "discount": 25
   },
   {
     "id": 49,
@@ -438,7 +486,8 @@
     "price": 2100,
     "stock": 55,
     "image": "vodka_patata.png",
-    "category": "Vodka"
+    "category": "Vodka",
+    "discount": 20
   },
   {
     "id": 50,
@@ -447,6 +496,7 @@
     "price": 2600,
     "stock": 50,
     "image": "gin_lavanda.png",
-    "category": "Gin"
+    "category": "Gin",
+    "discount": 15
   }
 ]

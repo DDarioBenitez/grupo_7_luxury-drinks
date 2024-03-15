@@ -1,3 +1,10 @@
+const { loadData } = require("../../data")
+
 module.exports = (req, res)=>{
-    res.render("admin/editProduct")
+const {id} = req.params
+const products = loadData()
+
+
+const productFind = products.find((p) =>p.id === +id)
+res.render("admin/editProduct",{products:productFind})
 }
