@@ -70,7 +70,7 @@
                                         </a>
                                     </article>
                                 </div>
-                            <% }) %>
+                                <% }) %>
 
                         </div>
 
@@ -86,33 +86,34 @@
 
                     <div class="glider-contain">
                         <div class="glider2">
-                            <% productsEspumantes.forEach(p=> { %>
-                                <div class="products">
-                                    <article class="product-1">
-                                        <a href="/detalle-de-producto/<%= p.id %>">
-                                            <figure>
-                                                <img src="/images/products/<%= p.image %>" alt="">
-                                            </figure>
-                                            <div class="product-details">
-                                                <p class="price-old">
-                                                    <%= toThousand(p.price) %>
-                                                </p>
-                                                <ul>
-                                                    <li class="price-actual">
-                                                        <%= toThousand((p.price - (p.price * p.discount) / 100))%>
-                                                    </li>
-                                                    <li class="discount">
-                                                        <%= p.discount %>% OFF
-                                                    </li>
-                                                </ul>
-                                                <h5>
-                                                    <%= p.name %>
-                                                </h5>
-                                            </div>
-                                        </a>
-                                    </article>
-                                </div>
-                            <% }) %>
+                            <%= console.log(productsEspumantes) %>
+                                <% productsEspumantes.forEach(p=> { %>
+                                    <div class="products">
+                                        <article class="product-1">
+                                            <a href="/detalle-de-producto/<%= p.id %>">
+                                                <figure>
+                                                    <img src="/images/products/<%= p.image %>" alt="">
+                                                </figure>
+                                                <div class="product-details">
+                                                    <p class="price-old">
+                                                        <%= toThousand(p.price) %>
+                                                    </p>
+                                                    <ul>
+                                                        <li class="price-actual">
+                                                            <%= toThousand((p.price - (p.price * p.discount) / 100))%>
+                                                        </li>
+                                                        <li class="discount">
+                                                            <%= p.discount %>% OFF
+                                                        </li>
+                                                    </ul>
+                                                    <h5>
+                                                        <%= p.name %>
+                                                    </h5>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <% }) %>
                         </div>
 
                         <button aria-label="Previous" class="glider-prev2">«</button>
@@ -153,7 +154,7 @@
                                         </a>
                                     </article>
                                 </div>
-                            <% }) %>
+                                <% }) %>
                         </div>
 
                         <button aria-label="Previous" class="glider-prev3">«</button>
@@ -194,7 +195,7 @@
                                         </a>
                                     </article>
                                 </div>
-                            <% }) %>
+                                <% }) %>
                         </div>
 
                         <button aria-label="Previous" class="glider-prev4">«</button>
@@ -235,7 +236,7 @@
                                         </a>
                                     </article>
                                 </div>
-                            <% }) %>
+                                <% }) %>
                         </div>
 
                         <button aria-label="Previous" class="glider-prev5">«</button>
@@ -281,7 +282,7 @@
                                         </a>
                                     </article>
                                 </div>
-                            <% }) %>
+                                <% }) %>
                         </div>
 
                         <button aria-label="Previous" class="glider-prev6">«</button>
