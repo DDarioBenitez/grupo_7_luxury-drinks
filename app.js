@@ -8,9 +8,11 @@ const methodOverride = require("method-override")
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./views"));
 
+
 /* MIDDLEWARE */
 app.use(express.static('public'));
 app.use(methodOverride("_method"))
+app.use(express.urlencoded({ extended: true }));
 
 
 
@@ -28,7 +30,6 @@ app.use("/", authRoutes);
 app.use("/", cartRoutes);
 app.use("/", productDetail);
 app.use("/admin", adminRoutes);
-
 
 
 

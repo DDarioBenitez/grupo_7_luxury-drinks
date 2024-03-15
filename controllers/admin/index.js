@@ -3,5 +3,6 @@ module.exports = {
     editProduct: require ("./editProduct.controller"),
     updateProduct: require ("./updateProduct.controller"),
     listProducts: require("./listProducts.controller"),
-    deleteProduct: require("./deleteProduct.controller")
+    deleteProduct: require("./deleteProduct.controller"),
+    storeProduct: require ("./storeProduct.controller")
 }
