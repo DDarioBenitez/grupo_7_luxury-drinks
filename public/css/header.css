@@ -51,6 +51,10 @@
   color: var(--negro);
 }
 
+.ing{
+  display: none;
+}
+
 @media (min-width: 768px) {
   .header {
     background-color: var(--negro);
@@ -182,6 +186,8 @@
   .logo img{
     width: 50%;
   }
+
+  
 }
   
 

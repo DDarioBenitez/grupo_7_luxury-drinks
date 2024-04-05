@@ -1,42 +1,51 @@
 [
-    {
-        "id": 1,
-        "name": "Antonella",
-        "apellido": "Dukwen",
-        "email": "antoDuk@gmail.com",
-        "password": 123456,
-        "role": "admin"
-    },
-    {
-        "id": 2,
-        "name": "Dario",
-        "apellido": "Benitez",
-        "email": "reedq@gmail.comp",
-        "password": 123456,
-        "role": "regular"
-    },
-    {
-        "id": 3,
-        "name": "Lucas",
-        "apellido": "Fasanella",
-        "email": "lucasF@gmail.com",
-        "password": 123456,
-        "role": "regular"
-    },
-    {
-        "id": 4,
-        "name": "Matias",
-        "apellido": "Saravia",
-        "email": "matias@gmail.com",
-        "password": 123456,
-        "role": "regular"
-    },
-    {
-        "id": 5,
-        "name": "Juan",
-        "apellido": "Samek",
-        "email": "juandsamek@gmail.com",
-        "password": 123456,
-        "role": "regular"
-    },
+   {
+      "id": 1,
+      "name": "Antonella",
+      "surname": "Dukwen",
+      "email": "antoDuk@gmail.com",
+      "password": 123456,
+      "role": "admin"
+   },
+   {
+      "id": 2,
+      "name": "Dario",
+      "apellido": "Benitez",
+      "email": "reedq@gmail.comp",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 3,
+      "name": "Lucas",
+      "surname": "Fasanella",
+      "email": "lucasF@gmail.com",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 4,
+      "name": "Matias",
+      "surname": "Saravia",
+      "email": "matias@gmail.com",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 5,
+      "name": "Juan",
+      "surname": "Samek",
+      "email": "juandsamek@gmail.com",
+      "password": 123456,
+      "role": "regular"
+   },
+   {
+      "id": 6,
+      "name": "MATHIAS",
+      "surname": "SARAVIA",
+      "email": "maycolbeach@gmail.com",
+      "password": "$2a$10$UkvowOP3FZ652zu/wn/gJe5/6FHqvx7vb3tqroPW.6o5n974DhhtW",
+      "role": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   }
 ]

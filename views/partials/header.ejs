@@ -16,14 +16,14 @@
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
-        <% if (!locals.userLogin) { %>
+        <% if (!locals.userLogin) {  %> 
           <div class="logreg">
             <button class="ing" type="button"><a href="/iniciar-sesion">Ingresa</a> </button>
             <button class="reg" type="button"><a href="/registrarse">Registrarse</a></button>
         </div>
-        <% } else {
+       <% } else { %>
             <button class="ing" type="button"><a href="/perfil">Perfil</a> </button>
-        } %>
+            <% } %>
        
     </div>
     <div class="headerBot">
