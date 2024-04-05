@@ -38,14 +38,5 @@
       "email": "juandsamek@gmail.com",
       "password": 123456,
       "role": "regular"
-   },
-   {
-      "id": 6,
-      "name": "MATHIAS",
-      "surname": "SARAVIA",
-      "email": "maycolbeach@gmail.com",
-      "password": "$2a$10$UkvowOP3FZ652zu/wn/gJe5/6FHqvx7vb3tqroPW.6o5n974DhhtW",
-      "role": "regular",
-      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]

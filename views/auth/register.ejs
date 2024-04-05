@@ -22,14 +22,16 @@
             </div>
 
             <div class="email">
-                <input type="email" name="email" value="" placeholder="e-mail">
+                <input type="text" name="email" value="" placeholder="e-mail"> 
             </div>
+
+             <p class="text-danger fs-6"> <%= locals.errors?.email?.msg %></p>
 
             <div class="data">
 
                 <div class="contrep">
                     <input class="contr" type="password" name="password" value="" placeholder="contraseña">
-
+                    <p class="text-danger fs-6"><%= locals.errors?.password?.msg %></p>
    
 
                 </div>

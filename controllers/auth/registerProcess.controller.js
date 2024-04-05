@@ -9,7 +9,7 @@ module.exports = (req, res) => {
     if (errors.isEmpty()) {
 
          const {email ,password , surname ,name } = req.body;
-    const users = loadData("users");
+         const users = loadData("users");
 
      const newUser= {
         id: !users.length ? 1 : users[users.length - 1].id + 1,
@@ -30,6 +30,10 @@ module.exports = (req, res) => {
     res.redirect("/") 
     return
 }
-res.render("registrarse",{old:req.body , errors:errors.mapped()})
+
+res.render("auth/register",{
+    old: req.body,
+    errors: errors.mapped(),
+})
 
 }
