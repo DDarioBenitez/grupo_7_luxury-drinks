@@ -7,7 +7,7 @@ const { LoginValidation } = require("../middleware/validations/auth.validation")
 
 
 router.get("/iniciar-sesion", authController.login);
-router.post("/iniciar-sesion",  authController.loginProcess);
+router.post("/iniciar-sesion",authController.loginProcess);
 
 router.get("/registrarse", authController.register);
 router.post("/registrarse", registerValidation ,authController.registerProcess);

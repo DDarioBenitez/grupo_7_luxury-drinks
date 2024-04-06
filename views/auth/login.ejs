@@ -14,13 +14,14 @@
 
                 <div class="login-email">
                     <label class="login-email1" for="email">Email:</label>
-                    <input class="login-email2" type="email" name="email" id="email" placeholder="email">
+                    <input class="login-email2" type="text" name="email" value="" placeholder="email">
                 </div>
+                <p class="text-danger fs-6"> <%= locals.errors?.email?.msg %></p>
 
                 <div class="login-contraseña">
                     <label class="login-contraseña1" for="password">contraseña:</label>
-                    <input class="login-contraseña2" type="password" name="password" id="password" placeholder="contraseña">
-                    
+                    <input class="login-contraseña2" type="password" name="password" value="" placeholder="contraseña">
+                    <p class="text-danger fs-6"><%= locals.errors?.password?.msg %></p>
                 </div>
 
                 <button class="login-ingresar" type="submit">Ingresar</a></button>

@@ -38,5 +38,32 @@
       "email": "juandsamek@gmail.com",
       "password": 123456,
       "role": "regular"
+   },
+   {
+      "id": 6,
+      "name": "",
+      "surname": "",
+      "email": "amsams@gmail.com",
+      "password": "$2a$10$4xOYPoxc3KadZ62Nur5wJ.m6p.rqZPCNKZZWONgltmT.QUjIDML86",
+      "role": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 7,
+      "name": "Supermatt",
+      "surname": "26",
+      "email": "maycolbeach@gmail.com",
+      "password": "$2a$10$EopvXn//Xs290VKuDC0y.OkATVYhhIm51cZboRXl2C97bwJgyIYve",
+      "role": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 8,
+      "name": "",
+      "surname": "",
+      "email": "asas@gmail.com",
+      "password": "$2a$10$7b0O0pnXFj67NElpTaT7PuZdJAlTrAWNg1i7DMa0kMFyXoo6ZgQX.",
+      "role": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]

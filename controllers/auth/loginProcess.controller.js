@@ -1,9 +1,13 @@
 const { compareSync } = require("bcryptjs");
+const { validationResult } = require("express-validator");
 const { loadData } = require("../../data");
 
 module.exports = (req, res) => {
-const {email , password , remember} = req.body;
-const users = loadData("users");
+const errors = validationResult(req)
+
+    
+const {email , password , remember} = req.body;  
+const users = loadData("users");  
 
 if(!email){
    return res.send("debe mandar un email")
@@ -34,5 +38,7 @@ res.cookie("userLogin",req.session.userLogin,{maxAage:5000})
 }
 
 res.redirect("/")
-
 }
+
+
+
