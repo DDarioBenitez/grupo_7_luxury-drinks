@@ -4,31 +4,31 @@
       "name": "Antonella",
       "lastname": "Dukwen",
       "email": "antoDuk@gmail.com",
-      "password": 123456,
+      "password": "",
       "role": "admin"
    },
    {
       "id": 2,
-      "name": "Raul",
-      "lastname": "Gauna",
+      "name": "Antonello",
+      "lastname": "Rodriguez",
       "email": "reedq@gmail.comp",
       "password": "454545",
       "role": "regular"
    },
    {
       "id": 3,
-      "name": "Lucas",
+      "name": "Lucho",
       "lastname": "Fasanella",
       "email": "lucasF@gmail.com",
-      "password": 123456,
+      "password": "tomate25",
       "role": "regular"
    },
    {
       "id": 4,
-      "name": "Matias",
+      "name": "Gregorio",
       "lastname": "Saravia",
       "email": "matias@gmail.com",
-      "password": 123456,
+      "password": "123456",
       "role": "regular"
    },
    {
