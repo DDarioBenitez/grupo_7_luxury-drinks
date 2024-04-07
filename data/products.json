@@ -466,5 +466,10 @@
       "discount": 10,
       "category": "populares",
       "image": "mingo_pomelo_750ml.png"
+   },
+   {
+      "id": 54,
+      "price": null,
+      "image": "imagen-no-disponible.jpg"
    }
 ]
