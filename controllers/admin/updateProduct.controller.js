@@ -31,8 +31,8 @@ module.exports = (req, res)=>{
         }
         return p
     })
- saveData(productsMapped)
+    saveData(productsMapped)
 
 
- res.redirect(`/detalle-de-producto/${id}`)
+    res.redirect(`/detalle-de-producto/${id}`)
 }
