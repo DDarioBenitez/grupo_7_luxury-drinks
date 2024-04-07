@@ -1,23 +1,42 @@
 [
     {
         "id": 1,
-        "name": "Alan Lopez",
-        "lastname": "Lopez",
-        "email": "alanlopez@hotmail.com",
-        "password": 121212
+        "name": "Antonella",
+        "apellido": "Dukwen",
+        "email": "antoDuk@gmail.com",
+        "password": 123456,
+        "role": "admin"
     },
     {
         "id": 2,
-        "name": "Mateo",
-        "lastname": "Rodriguez",
-        "email": "rodriguez@hotmail.com",
-        "password": 121212
+        "name": "Dario",
+        "apellido": "Benitez",
+        "email": "reedq@gmail.comp",
+        "password": 123456,
+        "role": "regular"
     },
     {
         "id": 3,
         "name": "Lucas",
-        "lastname": "Gimenez",
-        "email": "lucasgimenez@hotmail.com",
-        "password": 1212132
+        "apellido": "Fasanella",
+        "email": "lucasF@gmail.com",
+        "password": 123456,
+        "role": "regular"
+    },
+    {
+        "id": 4,
+        "name": "Matias",
+        "apellido": "Saravia",
+        "email": "matias@gmail.com",
+        "password": 123456,
+        "role": "regular"
+    },
+    {
+        "id": 5,
+        "name": "Juan",
+        "apellido": "Samek",
+        "email": "juandsamek@gmail.com",
+        "password": 123456,
+        "role": "regular"
     }
 ]

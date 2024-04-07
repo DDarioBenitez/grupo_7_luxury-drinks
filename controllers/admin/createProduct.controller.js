@@ -1,3 +1,5 @@
 module.exports = (req, res) => {
-    res.render("admin/createProduct")
+
+    const category = require("../../data/products.json")
+    res.render("admin/createProduct", {category})
 }
