@@ -7,31 +7,31 @@
     <%- include("../partials/header")%>
 
     <main class="registrarse">
-        <form action="/register" method="post">
+        <form action="/actualizar-usuario/<%= user.id %>?_method=PUT" method="post">
 
-            <h1>Registrarse</h1>
+            <h1>Actualizar su perfil</h1>
 
-            <p class="p4">Completá los siguientes datos para registrarte como usuario</p>
+            <p class="p4">Completá los siguientes datos para actualizar su usuario</p>
 
             <div class="nomape">
 
-                <input type="name" name="name" id="name" value="" placeholder="nombre">
+                <input type="name" name="name" id="name" value="<%= user.name %>">
 
-                <input type="name" name="lastname" id="apellido" value="" placeholder="apellido">
+                <input type="name" name="apellido" id="apellido" value="<%= user.lastname %>" placeholder="apellido">
 
             </div>
 
             <div class="email">
-                <input type="email" name="email" value="" placeholder="e-mail">
+                <input type="email" name="email" value="<%= user.email %>" placeholder="e-mail">
             </div>
 
             <div class="data">
 
                 <div class="contrep">
-                    <input class="contr" type="password" name="password" value="" placeholder="contraseña">
+                    <input class="contr" type="password" name="password" placeholder="Nueva contraseña">
 
-                    <input class="repc" type="password" name="repetir contrasenia" value=""
-                        placeholder="repetir contraseña">
+                    <input class="repc" type="password" name="password"
+                        placeholder="Confirmar contraseña">
 
                 </div>
 
@@ -54,12 +54,11 @@
                 </div>
             </div>
             <div class="button">
-                <button type="submit"><a href="/">Registrarse</a></button>
+                <button type="submit"><a href="/">Actualizar</a></button>
             </div>
-            <div>
-                <p class="p4">Ya tenés una cuenta? <a href="/login">Iniciar sesion</a></p>
+            <div class="button">
+                <button type="submit"><a href="/">Cancelar</a></button>
             </div>
-
         </form>
 
     </main>
