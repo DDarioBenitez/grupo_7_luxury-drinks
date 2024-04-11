@@ -9,18 +9,18 @@
    },
    {
       "id": 2,
-      "name": "Antonello",
-      "lastname": "Rodriguez",
+      "name": "Lucrecia",
+      "lastname": "Lopez",
       "email": "reedq@gmail.comp",
-      "password": "454545",
+      "password": "lucas123",
       "role": "regular"
    },
    {
       "id": 3,
-      "name": "Lucho",
+      "name": "Dario",
       "lastname": "Fasanella",
       "email": "lucasF@gmail.com",
-      "password": "tomate25",
+      "password": "",
       "role": "regular"
    },
    {
