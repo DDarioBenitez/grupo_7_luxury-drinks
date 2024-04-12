@@ -13,7 +13,9 @@ router.get("/registrarse", authController.register);
 router.post("/registrarse", registerValidation ,authController.registerProcess);
 
 
-router.get("/perfil", authController.perfil)
+//router.get("/perfil", authController.perfil)
 
+router.get("/actualizar-usuario/:id", authController.editUser);
+router.put("/actualizar-usuario/:id", updateValidation, authController.updateUser);
 
 module.exports = router;
