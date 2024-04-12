@@ -36,8 +36,8 @@ const fieldEmailUpdate = body("email")
     })
 
 const fieldPasswordUpdate = body("password")
-    .isLength({min: 8, max: 15})
-    .withMessage("Debe tener entre 8 a 15 caracteres")
+    .isLength({min: 8})
+    .withMessage("La contraseña debe tener minimo 8 caracteres")
     .bail()
 
 

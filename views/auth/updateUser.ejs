@@ -7,6 +7,7 @@
     <%- include("../partials/header")%>
 
     <main class="registrarse">
+        <% if (user) { %>
         <form action="/actualizar-usuario/<%= user.id %>?_method=PUT" method="post">
 
             <h1>Actualizar su perfil</h1>
@@ -68,7 +69,9 @@
                 <button type="submit"><a href="/">Cancelar</a></button>
             </div>
         </form>
-
+        <% } else { %>
+            <p>Usuario no encontrado</p>
+        <% } %>
     </main>
 
     <script src="../../public/js/alertDelete.js"></script>

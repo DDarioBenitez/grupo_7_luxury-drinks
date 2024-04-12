@@ -3,8 +3,8 @@
       "id": 1,
       "name": "Antonella",
       "lastname": "Dukwen",
-      "email": "antoDuk@gmail.com",
-      "password": "",
+      "email": "aantoDuk@gmail.com",
+      "password": "12345678",
       "role": "admin"
    },
    {
