@@ -3,8 +3,8 @@ const path = require('path')
 const app = express();
 const port = 3050;
 const methodOverride = require("method-override")
-const createSessionFromCookies = require("./middleware/createSessionFromCookies")
-const insertDataLocal = require('./middleware/insertDataLocal');
+const createSessionFromCookies = require("./middlewares/createSessionFromCookies")
+const insertDataLocal = require('./middlewares/insertDataLocal');
 const cookieParse = require("cookie-parser")
 const session = require("express-session")
 

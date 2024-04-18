@@ -2,8 +2,8 @@ const express = require("express");
 const router = express.Router();
 
 const authController = require("../controllers/auth");
-const { registerValidation } = require("../middleware/validations/auth.validation");
-const { LoginValidation } = require("../middleware/validations/auth.validation");
+const { registerValidation } = require("../middlewares/validations/auth.validation");
+const { LoginValidation } = require("../middlewares/validations/auth.validation");
 
 
 router.get("/iniciar-sesion", authController.login);
