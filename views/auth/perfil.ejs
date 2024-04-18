@@ -3,43 +3,80 @@
 
 <%- include("../partials/head")%>
 
-<body>
-
+<body class="register-body">
     <%- include("../partials/header")%>
 
-    <div class="container mt-5">
-      <div class="row justify-content-center pb-5">
-        <div class="col-md-6">
-          <div class="card">
-            <div class="card-header">
-              <h3 class="card-title">Mi Perfil</h3>
+    <main class="registrarse">
+        <% if (user) { %>
+        <form action="/actualizar-usuario/<%= user.id %>?_method=PUT" method="post">
+
+            <h1>Actualizar su perfil</h1>
+
+            <p class="p4">Completá los siguientes datos para actualizar su usuario</p>
+
+            <div class="nomape">
+
+                <input type="name" name="name" id="name" value="<%= user.name %>">
+                <% if(locals.errors){ %>
+                <%= errors?.email?.msg %>
+                <% } %>  
+                <input type="name" name="lastname" id="apellido" value="<%= user.lastname %>" placeholder="apellido">
+                <% if(locals.errors){ %>
+                <%= errors?.lastname?.msg %>
+                <% } %>     
             </div>
-            <div class="card-body">
-              <form>
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-                </div>
-                <div class="mb-3">
-                  <label for="apellido" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Correo Electrónico</label>
-                  <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
-                </div>
-                <button type="submit" class="btn btn-primary">Guardar</button>
-              </form>
+
+            <div class="email">
+                <input type="email" name="email" value="<%= user.email %>" placeholder="e-mail">
+                <% if(locals.errors){ %>
+                <%= errors?.email?.msg %>
+                <% } %>  
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
+            <div class="data">
 
+                <div class="contrep">
+                    <input class="contr" type="password" name="password" placeholder="Nueva contraseña">
 
-<%- include("../partials/footer")%>
+                    <input class="repc" type="password" placeholder="Confirmar contraseña">
+                    <% if(locals.errors){ %>
+                    <%= errors?.password?.msg %>
+                    <% } %>  
+                </div>
 
+                <div class="normas">
+                    <ul>
+                        <li> <i class="fa-solid fa-circle-xmark"></i>
+                            <p>8 a 15 caracteres</p>
+                        </li>
+
+                        <li> <i class="fa-solid fa-circle-xmark"></i>
+                            <p>Al menos una mayúscula</p>
+                        </li>
+
+                        <li> <i class="fa-solid fa-circle-xmark"></i>
+                            <p>Al menos un número</p>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="button">
+                <button type="submit">Actualizar</button>
+            </div>
+            <div class="button">
+                <button type="submit"><a href="/">Cancelar</a></button>
+            </div>
+        </form>
+        <% } else { %>
+            <p>Usuario no encontrado</p>
+        <% } %>
+    </main>
+
+    <script src="../../public/js/alertDelete.js"></script>
+    <%- include("../partials/footer")%>
+    
 </body>
 
 </html>
