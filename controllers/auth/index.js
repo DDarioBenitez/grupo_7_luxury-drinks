@@ -5,5 +5,6 @@ module.exports = {
     registerProcess:require("./registerProcess.controller"),
     perfil:require("./perfil.controller"),
     editUser:require("./editUser.controller"),
-    updateUser:require("./updateUser.controller")
+    updateUser:require("./updateUser.controller"),
+    logout:require("./logout.controller")
 }

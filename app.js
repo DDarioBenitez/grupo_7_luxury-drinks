@@ -8,6 +8,7 @@ const insertDataLocal = require('./middlewares/insertDataLocal');
 const cookieParse = require("cookie-parser")
 const session = require("express-session")
 
+
 /* CONFIGS */
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./views"));

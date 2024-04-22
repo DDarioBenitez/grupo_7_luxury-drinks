@@ -19,4 +19,6 @@ router.post("/registrarse", registerValidation ,authController.registerProcess);
 router.get("/actualizar-usuario/:id", authController.editUser);
 router.put("/actualizar-usuario/:id", updateValidation, authController.updateUser);
 
+router.get("/cerrar-sesion", authController.logout)
+
 module.exports = router;

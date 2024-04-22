@@ -72,7 +72,25 @@
       "surname": "SARAVIA",
       "email": "matiassas@gmail.com",
       "password": "$2a$10$pG6yA72jzFakRtkkYoMwh.3gfnIJ0jY58DR/XnipWaslxlaX5QxHW",
-      "role": "regular",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 10,
+      "name": "mathias",
+      "surname": "",
+      "email": "mathiasnasi@gmail.com",
+      "password": "$2a$10$ZKuJTunWzqd80IGI3bH5ZeWXMOYh0/IO6n65XwcBJmZqjD.CHDjyW",
+      "rol": "ADMIN",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 11,
+      "name": "mathiasxd",
+      "surname": "",
+      "email": "mathias26@gmail.com",
+      "password": "$2a$10$ADTd3v4AFDJv.IiKGxPLVO6kOvXCRgLmbWIXzqlgpBGjR1VyVVTDS",
+      "rol": "ADMIN",
       "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]

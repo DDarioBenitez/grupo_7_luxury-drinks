@@ -24,8 +24,9 @@ if(!isValidPass){
     return res.send("Contraseña invalida")
 }
 
-const {name,surname,rol,avatar} = userFind
+const {name,surname,rol,avatar,id} = userFind
 req.session.userLogin = {
+id,
 name,
 surname,
 email,

@@ -19,7 +19,7 @@ module.exports = (req, res)=>{
                     lastname: lastname, 
                     email: email,
                     password: password.trim().length > 1 ? password : u.password,
-                    role: u.role
+                    rol: u.role
                 }
                 
                 return userUpdate
