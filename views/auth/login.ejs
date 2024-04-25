@@ -3,19 +3,19 @@
 
 <%- include("../partials/head")%>
 
-<body>
+    <body>
 
 
-    <%- include("../partials/header")%>
+        <%- include("../partials/header")%>
 
         <main class="login-inicio">
             <h1 class="login-titulo"> Iniciar sesion</h1>
             <form action="/iniciar-sesion" method="post">
 
-                <div class="login-email">
-                    <label class="login-email1" for="email">Email:</label>
-                    <input class="login-email2" type="text" name="email" value="" placeholder="email">
-                </div>
+                    <div class="login-email">
+                        <label class="login-email1" for="email">Email:</label>
+                        <input class="login-email2" type="text" name="email" value="" placeholder="email">
+                    </div>
                 <p class="text-danger fs-6"> <%= locals.errors?.email?.msg %></p>
 
                 <div class="login-contraseña">
@@ -33,10 +33,10 @@
             </form>
 
 
-        </main>
+            </main>
 
-        <%- include("../partials/footer")%>
+            <%- include("../partials/footer")%>
 
-</body>
+    </body>
 
 </html>

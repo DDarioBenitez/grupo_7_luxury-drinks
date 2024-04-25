@@ -12,20 +12,30 @@
             </div>
         </div>
 
-        <div class="carrito">
+        <% if (locals.userLogin) { %>
+            <div class="carrito"><a href="/carrito">
             <i class="fa-solid fa-cart-shopping"></i>
-        </div>
+        </div></a>
+            <% } %>
+       
 
+        <% if (locals.userLogin?.rol === "ADMIN") { %>
+            <button class="ing" type="button"><a href="/admin/lista-de-productos">Dashboard</a> </button>
+            <% } %>
+            
         <% if (!locals.userLogin) {  %> 
           <div class="logreg">
             <button class="ing" type="button"><a href="/iniciar-sesion">Ingresa</a> </button>
             <button class="reg" type="button"><a href="/registrarse">Registrarse</a></button>
         </div>
        <% } else { %>
-            <button class="ing" type="button"><a href="/perfil">Perfil</a> </button>
+            <button class="ing" type="button"><a href="/actualizar-usuario/<%= locals.userLogin?.id%>">Perfil</a> </button>
+            <button class="ing" type="button"><a href="/cerrar-sesion"><i class="fa-solid fa-person-chalkboard"></i></a></button>
             <% } %>
        
-    </div>
+            
+    
+        </div>
     <div class="headerBot">
         <nav class="navheader">
             <ul class="navheader-ul">

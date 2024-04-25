@@ -19,7 +19,11 @@ module.exports = (req, res)=>{
                     lastname: lastname, 
                     email: email,
                     password: password.trim().length > 1 ? password : u.password,
+<<<<<<< HEAD
                     role: u.role
+=======
+                    rol: u.role
+>>>>>>> develop
                 }
                 
                 return userUpdate
@@ -31,5 +35,9 @@ module.exports = (req, res)=>{
         res.redirect('/');
     }
     
+<<<<<<< HEAD
     res.render("auth/perfil",{user: req.body, errors: errors.mapped()})
+=======
+    res.render("auth/updateUser",{user: req.body, errors: errors.mapped()})
+>>>>>>> develop
 }
