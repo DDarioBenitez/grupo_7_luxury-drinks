@@ -1,5 +1,5 @@
-module.exports = {
-    if(req.session.userLogin){
+module.exports = (res, req) => {
+    if (req.session.userLogin) {
         res.locals.userLogin = req.session.userLogin
     }
     next()

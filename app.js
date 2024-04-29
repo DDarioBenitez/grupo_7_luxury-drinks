@@ -3,8 +3,8 @@ const path = require('path')
 const app = express();
 const port = 3050;
 const methodOverride = require("method-override")
-const insertDataLocal = require('./middleware/validations/insertDataLocal');
 const cookieParse = require("cookie-parse")
+const{ createSessionFromCookies, insertDataLocals } = require('./middleware')
 
 /* CONFIGS */
 app.set("view engine", "ejs");
@@ -16,7 +16,12 @@ app.use(express.static('public'));
 app.use(methodOverride("_method"))
 app.use(express.urlencoded({ extended: true }));
 app.use(insertDataLocal);
-app.use(cookieParse())
+app.use(cookieParse());
+app.use(express.json());
+app.use(session({secret : "Si se pudo"}))
+
+app.use(createSessionFromCookies)
+app.use(insertDataLocals)
 
 
 
@@ -28,12 +33,11 @@ const productDetail = require("./routes/products.routes");
 const adminRoutes = require("./routes/admin.routes");
 
 
-
 /* RUTAS */
 app.use("/", otherRoutes);
-app.use("/", authRoutes);
-app.use("/", cartRoutes);
-app.use("/", productDetail);
+app.use("/auth", authRoutes);
+app.use("/cart", cartRoutes);
+app.use("/product", productDetail);
 app.use("/admin", adminRoutes);
 
 
