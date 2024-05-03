@@ -6,6 +6,7 @@ const authController = require("../controllers/auth");
 
 router.get("/iniciar-sesion", authController.login);
 router.get("/registrarse", authController.register);
+router.post("/registrarse", authController.processRegister)
 
 
 
