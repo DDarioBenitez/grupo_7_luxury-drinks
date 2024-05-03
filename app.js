@@ -7,7 +7,6 @@ const session = require("express-session")
 const createSessionFromCookies = require("./src/middlewares/createSessionFromCookies")
 const insertDataLocal = require('./src/middlewares/insertDataLocal');
 const cookieParse = require("cookie-parser")
-const session = require("express-session")
 
 
 /* CONFIGS */
