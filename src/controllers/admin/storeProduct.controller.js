@@ -1,22 +1,19 @@
-const {loadData, saveData} = require("../../database")
+const db = require("../../database/models")
 
 module.exports = (req, res) => {       
-   const products = loadData()
-   const { name, description, price, stock, image, category } = req.body;
-    const newId = products [products.length - 1].id + 1
+   const {name, price, discount, category, description} = req.body;
 
- const newProduct = {
-    id: newId,
-    name: name,
-    description: description,
-    price: +price,
-    stock: stock,
-    image: "imagen-no-disponible.jpg",
-    category: category,
- };
+   db.product.crate({
+      name: name.trim(),
+      price: +price,
+      discount: +discount,
+      description: description.trim(),
+      category: +category,
+      image: "default.jpg",
+      available: true
+   })
+   .then((product) => {
+      res.redirect("/admin/lista-de-productos")
+   })
 
- products.push(newProduct)
- saveData(products)
-
- res.redirect("/admin/lista-de-productos")
-};
+}

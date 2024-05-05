@@ -1,5 +1,10 @@
-module.exports = (req, res) => {
+const db = require("../../database/models")
 
-    const category = require("../../database/products.json")
-    res.render("admin/createProduct", {category})
+module.exports = (req, res) => {
+ db.category.findAll()
+ .then((category) => {
+      res.render("admin/createProduct", {category})
+ })
+    //const category = require("../../database/products.json")
+   
 }
