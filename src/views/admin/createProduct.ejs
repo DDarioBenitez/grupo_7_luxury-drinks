@@ -16,28 +16,28 @@
 
     <div class="card  container mb-4" style="width: 40rem;">
     
-    <form action="/admin/crear-producto" method="POST" enctype="multipart/form-data" class="row ">
+    <form action="/admin/crear-producto" method="post" enctype="multipart/form-data" class="row">
       <div class=" col-12">
         <label for="text" class="form-label"></label>
-        <input type="text" class="form-control" name="name" placeholder="Titulo">
+        <input type="text" class="form-control" name="title" placeholder="Titulo" value="" >
       </div>
 
       <div class="mb-3 col-6">
         <label for="precio" class="form-label"></label>
-        <input type="number" class="form-control" id="precio" name="price" placeholder="Precio">
+        <input type="number" class="form-control" id="" name="price" placeholder="Precio" value="" >
       </div>
 
       <div class="mb-3 col-6">
         <label for="Descuento" class="form-label"></label>
-        <input type="number" class="form-control" id="Descuento" name="discount" placeholder="Descuento">
+        <input type="number" class="form-control" id="" name="discount" placeholder="Descuento" value="" > 
       </div>
 
       <div class="mb-3 form-floating col-6 p-1">
-        <select class="form-select" id="floatingSelect" aria-label="Selecciona Categoria" name="category">
+        <select class="form-select" id="floatingSelect" aria-label="Selecciona Categoria" name="category" value="" >
           <option selected hidden>Selecciona Categoría</option>
 
-          <% category.forEach(c => { %>
-           <option value="1"><%= c.category %> <%= c.category %> </option>
+          <% category.forEach((c) => { %>
+           <option  value="<%= c.id %>"><%= c.name %></option>
           <% }) %>
           
         </select>
@@ -45,7 +45,7 @@
       </div>
 
       <div class="mb-2  p-1 form-floating col-6">
-        <textarea class="form-control" placeholder="Leave a comment here" name="description" id="floatingTextarea"></textarea>
+        <textarea class="form-control" placeholder="Leave a comment here" name="description" id="floatingTextarea" value="" ></textarea>
         <label for="floatingTextarea">Descripción</label>
       </div>
 

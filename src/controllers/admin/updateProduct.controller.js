@@ -15,7 +15,7 @@ module.exports = (req, res)=>{
         discount: +discount,
         description: description.trim(),
         categoryId: +category,
-        image:image ? image.filename : image
+        imagePrincipal:image ? image.filename : image
 
     }, {where: {
         id

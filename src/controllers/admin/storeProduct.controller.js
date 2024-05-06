@@ -1,18 +1,19 @@
 const db = require("../../database/models")
 
 module.exports = (req, res) => {       
-   const {name, price, discount, category, description} = req.body;
+   const {title,price,discount,description,category} = req.body;
+   const image = req.file
 
-   db.product.crate({
-      name: name.trim(),
+   db.product.create({
+      title: title.trim(),
       price: +price,
       discount: +discount,
       description: description.trim(),
-      category: +category,
-      image: "default.jpg",
-      available: true
+      categoryId: +category,
+      imagePrincipal: image?.length ? 
+      image?.filname : "default-avatar-icon-of-social-media-user-vector.jpg",
    })
-   .then((product) => {
+   .then(() => {
       res.redirect("/admin/lista-de-productos")
    })
 

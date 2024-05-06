@@ -5,6 +5,4 @@ module.exports = (req, res) => {
  .then((category) => {
       res.render("admin/createProduct", {category})
  })
-    //const category = require("../../database/products.json")
-   
 }
