@@ -1,26 +1,29 @@
-const productService = require("../services/productService");
+
+const { loadData, saveData } = require("../../database");
+const path = require("path")
+const fs = require("fs")
+const db = require("../../database/models")
 
 module.exports = (req, res) => {
-    const { id } = req.params;
-    const { name, price, discount, description, category } = req.body;
-    const image = req.file;
-    const newData = {
-        name,
-        price,
-        discount,
-        description,
-        category
-    };
-    if (image) {
-        newData.image = image.filename;
-    }
+    const { id } = req.params
+    const { title, price, discount, description, category } = req.body;
+    const image = req.file
 
-    productService.updateProduct(id, newData)
+    db.product.update({
+        title: title.trim(),
+        price: +price,
+        discount: +discount,
+        description: description.trim(),
+        categoryId: +category,
+        imagePrincipal: image ? image.filename : image
+
+    }, {
+        where: {
+            id
+        }
+    })
         .then(() => {
-            res.redirect(`/detalle-de-producto/${id}`);
+            res.redirect(`/detalle-de-producto/${id}`)
         })
-        .catch(error => {
-            console.error('Error:', error);
-            res.status(500).send('Error interno del servidor');
-        });
-};
+
+}

@@ -1,13 +1,11 @@
-const productService = require("../services/productService");
-
+const db = require("../../database/models")
 module.exports = (req, res) => {
-    const { id } = req.params;
-    productService.getProductById(id)
-        .then(productFind => {
-            res.render("admin/editProduct", { product: productFind });
+    const { id } = req.params
+    const categoryPromise = db.category.findAll()
+    const productPromise = db.product.findByPk(id)
+    Promise.all([categoryPromise, productPromise])
+        .then(([category, product]) => {
+            res.render("admin/editProduct", { product, category })
         })
-        .catch(error => {
-            console.error('Error:', error);
-            res.status(500).send('Error interno del servidor');
-        });
-};
+}
+

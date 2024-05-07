@@ -1,22 +1,20 @@
-const { loadData, saveData } = require("../../database")
+const db = require("../../database/models")
 
 module.exports = (req, res) => {
-   const products = loadData()
-   const { name, description, price, stock, image, category } = req.body;
-   const newId = products[products.length - 1].id + 1
+   const { title, price, discount, description, category } = req.body;
+   const image = req.file
 
-   const newProduct = {
-      id: newId,
-      name: name,
-      description: description,
+   db.product.create({
+      title: title.trim(),
       price: +price,
-      stock: stock,
-      image: "imagen-no-disponible.jpg",
-      category: category,
-   };
+      discount: +discount,
+      description: description.trim(),
+      categoryId: +category,
+      imagePrincipal: image?.length ?
+         image?.filname : "default-avatar-icon-of-social-media-user-vector.jpg",
+   })
+      .then(() => {
+         res.redirect("/admin/lista-de-productos")
+      })
 
-   products.push(newProduct)
-   saveData(products)
-
-   res.redirect("/admin/lista-de-productos")
-};
+}
