@@ -19,7 +19,7 @@
         <form action="/admin/editar-producto/<%= product.id%>?_method=PUT" method="post" class="row" enctype="multipart/form-data">
           <div class=" col-12">
             <label for="text" class="form-label"></label>
-            <input type="text" class="form-control" placeholder="Titulo" name="name" value="<%= product.name %>">
+            <input type="text" class="form-control" placeholder="Titulo" name="title" value="<%= product.title %>">
           </div>
 
           <div class="mb-3 col-6">
@@ -35,13 +35,14 @@
 
           <div class="mb-3 form-floating col-6 p-1">
             <select class="form-select" id="floatingSelect" name="category" aria-label="Selecciona Categoria">
-              <option hidden>Selecciona Categoría</option>
-              <option value="<%= product.category === "vinos" ? "selected" : null %>">Vinos</option>
-              <option value="<%= product.category === "Gin" ? "selected" : null %>">Gin</option>
-              <option value="<%= product.category === "Ron" ? "selected" : null %>">Ron</option>
-              <option value="<%= product.category === "Tequila" ? "selected" : null %>">Tequila</option>
-              <option value="<%= product.category === "Whisky" ? "selected" : null %>">Whisky</option>
-              <option value="<%= product.category === "Cerveza" ? "selected" : null %>">Cerveza</option>
+              <option hidden value="">Selecciona Categoría</option>
+              <% category.forEach((c) => { %>
+              <option <%= 
+              locals.old?.category && +locals.old?.category === c.id ? 'selected' : 
+              c.id === product.categoryId? 
+              'selected' : null%>
+              value="<%= c.id %>"><%= c.name %></option>
+              <% }) %>
             </select>
             <label for="floatingSelect">Desplegar las opciones</label>
           </div>

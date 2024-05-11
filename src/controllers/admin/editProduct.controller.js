@@ -1,9 +1,11 @@
-const { loadData } = require("../../database")
-
+const db = require("../../database/models")
 module.exports = (req, res) => {
-    const { id } = req.params
-    const products = loadData()
-
-    const productFind = products.find((p) => p.id === +id)
-    res.render("admin/editProduct", { product: productFind })
+    const { id } = req.params   
+    const categoryPromise = db.category.findAll()
+    const productPromise = db.product.findByPk(id)
+    Promise.all([categoryPromise,productPromise])
+    .then(([category, product]) => {
+        res.render("admin/editProduct", { product, category })
+    })
 }
+

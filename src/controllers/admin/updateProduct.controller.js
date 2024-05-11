@@ -1,39 +1,27 @@
+
 const { loadData , saveData} = require("../../database");
 const path = require("path")
 const fs = require("fs")
+const db = require("../../database/models")
 
 module.exports = (req, res)=>{
     const {id} = req.params
-    const {name,price,discount,description,category} = req.body;
+    const {title,price,discount,description,category} = req.body;
     const image = req.file
-
-    const products = loadData()
-    const productsMapped = products.map(p => {
-        if(p.id === +id){
-            const productsUpdate = {
-                ...p,
-                name: name.trim(),
-                price: +price,
-                discount: +discount,
-                description: description.trim(),
-                category: category?.trim(),
-                image: image ? image.filename : p.image
-            };
-
-            if(image?.filename) {
-                const pathBeforeFile = path.join(__dirname,"../../public/image/products" + p.image)
-                const exitsFile= fs.existsSync(pathBeforeFile)
-                if(exitsFile){
-                    fs.unlinkSync(pathBeforeFile)
-                }
-            }
-            return productsUpdate
-        }
-        return p
-    })
     
- saveData(productsMapped)
+    db.product.update({
+        title: title.trim(),
+        price: +price,
+        discount: +discount,
+        description: description.trim(),
+        categoryId: +category,
+        imagePrincipal:image ? image.filename : image
 
-
-    res.redirect(`/detalle-de-producto/${id}`)
+    }, {where: {
+        id
+    }})
+    .then(() =>{
+     res.redirect(`/detalle-de-producto/${id}`)
+    })
+   
 }
