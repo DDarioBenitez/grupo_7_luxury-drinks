@@ -1,3 +1,5 @@
+
 module.exports = {
-    home: require("./home.controller")
+    home: require("./home.controller"),
+    search: require("./search.controller")
 }

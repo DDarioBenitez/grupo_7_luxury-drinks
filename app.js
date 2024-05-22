@@ -16,10 +16,11 @@ app.set("views", path.join(__dirname, "../grupo_7_luxury-drinks/src/views"));
 
 /* MIDDLEWARE */
 app.use(express.static('public'));
-app.use(methodOverride("_method"))
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(methodOverride("_method"))
 app.use(cookieParse())
-app.use(session({secret:"PALABRA SECRETA"}))
+app.use(session({secret:"PALABRA SECRETA", saveUninitialized: true, resave: true}))
 app.use(createSessionFromCookies)
 app.use(insertDataLocal);
 

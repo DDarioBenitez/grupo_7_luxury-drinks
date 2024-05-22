@@ -10,7 +10,7 @@ const adminController = require("../controllers/admin");
 router.get("/lista-de-productos", adminController.listProducts);
 
 router.get("/crear-producto", adminController.createProduct);
-router.post("/crear-producto", adminController.storeProduct);
+router.post("/crear-producto", uploadProducts.single("image"), adminController.storeProduct);
 
 router.get("/editar-producto/:id", adminController.editProduct);
 router.put("/editar-producto/:id", uploadProducts.single("img") , adminController.updateProduct);

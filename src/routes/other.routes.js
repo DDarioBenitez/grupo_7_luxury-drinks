@@ -5,6 +5,7 @@ const otherController = require("../controllers/other");
 
 
 router.get("/", otherController.home);
+router.get("/buscar", otherController.search);
 
 
 
