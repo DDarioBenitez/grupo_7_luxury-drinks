@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "status":"pending",
+        "state":"pending",
         "total":23000,
         "user":"mathias@gmail.com",
         "products":[{
