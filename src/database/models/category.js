@@ -21,6 +21,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'category',
+    onDelete:"CASCADE",
+    onUpdate:"CASCADE"
   });
   return category;
 };
