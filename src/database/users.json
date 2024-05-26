@@ -101,5 +101,32 @@
       "password": "$2a$10$1EfKn0IfEDT7XJKniBiEg.lmHzHdvqDgG4SAmUXp.Snnblm32dlm.",
       "rol": "regular",
       "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 13,
+      "name": "Antonela",
+      "surname": "duckwen",
+      "email": "antoduckwen@gmail.com",
+      "password": "$2a$10$C//dV2GyKzvubE8Mzx.UduJMXUHLWqO501WAXLCi7FIJcmvyHPv1y",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 14,
+      "name": "Antonela",
+      "surname": "duckwen",
+      "email": "anto@hotmail.com",
+      "password": "$2a$10$HSy.dVKQ3wrhTQ67jYuB2.1vKYDDLxDbtwkIY0yOfdtRVHRXWIKNC",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 15,
+      "name": "Antonela",
+      "surname": "duckwen",
+      "email": "anto.l.d@hotmail.com",
+      "password": "$2a$10$qtRqpiTCdsWv./7sjGfDQ.qDCezjYanJHhWZordvfjFEWRZAoy956",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]
