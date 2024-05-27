@@ -1,30 +1,26 @@
 [
     {
-        "id":1,
-        "state":"pending",
-        "total":23000,
-        "user":"mathias@gmail.com",
-        "products":[{
-            "name":"Champagne Norton Extra Brut 750ml",
-            "quantity": 1
-        },
+      "id": 1,
+      "state": "completed",
+      "total": 30000,
+      "user": "mathias26@gmail.com",
+      "products": [
         {
-            "name":"Sidra Real 720 x Caja de 6",
-            "quantity": 1
-        }]
+          "name": "Champagne Norton Extra Brut 750ml",
+          "quantity": 2
+        }
+      ]
     },
     {
-        "id":2,
-        "status":"pending",
-        "total":38000,
-        "user":"mathias26xd@gmail.com",
-        "products":[{
-            "name":"Champagne Norton Extra Brut 750ml",
-            "quantity": 2
-        },
+      "id": 2,
+      "state": "completed",
+      "total": 5000,
+      "user": "mathias26@gmail.com",
+      "products": [
         {
-            "name":"Sidra Real 720 x Caja de 6",
-            "quantity": 1
-        }]
+          "name": "Anana Fizz Real",
+          "quantity": 1
+        }
+      ]
     }
-]
+  ]

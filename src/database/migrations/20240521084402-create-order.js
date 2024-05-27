@@ -13,8 +13,9 @@ module.exports = {
         type: Sequelize.DECIMAL
       },
       userId: {
+        allowNull: false,
         type: Sequelize.INTEGER,
-        references:  {
+        references:{
           model:{
             tableName:"users"
           },

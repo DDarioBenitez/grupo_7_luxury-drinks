@@ -2,11 +2,11 @@ const express = require('express')
 const path = require('path')
 const app = express();
 const port = 3050;
-const methodOverride = require("method-override")
+const methodOverride = require("method-override");
+const session = require("express-session")
 const createSessionFromCookies = require("./src/middlewares/createSessionFromCookies")
 const insertDataLocal = require('./src/middlewares/insertDataLocal');
 const cookieParse = require("cookie-parser")
-const session = require("express-session")
 
 
 /* CONFIGS */
@@ -19,6 +19,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride("_method"))
+app.use(session({secret: "msj"}));
 app.use(cookieParse())
 app.use(session({secret:"PALABRA SECRETA", saveUninitialized: true, resave: true}))
 app.use(createSessionFromCookies)
