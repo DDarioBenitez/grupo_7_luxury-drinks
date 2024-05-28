@@ -24,10 +24,23 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Order.init({
-    total: DataTypes.DECIMAL,
+    total:{ 
+      type:DataTypes.DECIMAL,
+      defaultValue:0
+    }, 
     userId: DataTypes.INTEGER,
-    state: DataTypes.STRING
-  }, {
+    state: {
+      type: DataTypes.STRING,
+      validate: {
+        isIn: {
+          args:["completed","pending","canceled"],
+          msg:"Los valores valido de estados son : completed , pending , canceled"
+      },
+    },
+    defaultValue:"pending"
+  },
+},
+   {
     sequelize,
     modelName: 'Order',
   });
