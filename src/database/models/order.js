@@ -33,7 +33,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       validate: {
         isIn: {
-          args:["completed","pending","canceled"],
+          args:[["completed","pending","canceled"]],
           msg:"Los valores valido de estados son : completed , pending , canceled"
       },
     },

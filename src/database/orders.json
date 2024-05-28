@@ -22,29 +22,5 @@
           "quantity": 1
         }
       ]
-    },
-    {
-      "id": 6,
-      "state": "completed",
-      "total": 5000.00,
-      "user": "mathias26@gmail.com",
-      "products": [
-        {
-          "name": "Anana Fizz Real",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "state": "completed",
-      "total": 5000.00,
-      "user": "mathias26@gmail.com",
-      "products": [
-        {
-          "name": "Anana Fizz Real",
-          "quantity": 1
-        }
-      ]
     }
   ]

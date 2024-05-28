@@ -18,7 +18,7 @@ const orderProductMapped = orderJSON.map(ord => {
   });
   return productMapped
 }).flat(1);
-
+console.log(orderProductMapped)
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {

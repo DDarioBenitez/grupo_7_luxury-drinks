@@ -1,3 +1,7 @@
 module.exports = {
- getOrder : require("./getOrder.controller.api")
+ getOrder : require("./getOrder.controller.api"),
+ addProductToOrder : require("./addProductToOrder.controller.api"),
+ removeProductToOrder : require("./removeProductToOrder.controller.api"),
+ moreQuantity:require("./moreQuantity.controlles.api"),
+ lessQuantity:require("./lessQuantity.controlles.api")
 }

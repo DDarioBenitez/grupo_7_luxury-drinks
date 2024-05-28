@@ -1,29 +1,14 @@
-const { Op } = require("sequelize");
-const db = require("../../../database/models");
+
+const { getOrderPending } = require("../../utils");
 module.exports = async (req, res) => {
 
     try {
-            const [order, isCreate] = await db.Order.findOrCreate({
-                where: {
-                    [Op.and]: [
-                        {
-                            userId: 11 //req.session?.userLogin?.id
-                        },
-                        {
-                            state: "completed",   
-                        }
-                    ]
-                },
-                defaults: {
-                    userId: 11 //req.session?.userLogin?.id,
-
-                }
-            });
+           const [order, isCreate] = await getOrderPending(req);
 
             const statusCode = isCreate ? 201 : 200;
             res.status(statusCode).json({
                 ok: true,
-                data: order
+                data: await order.reload({ include: ["products"] })
             })
         
     } catch(err){
@@ -33,5 +18,4 @@ module.exports = async (req, res) => {
         })
     }
 }
-
     //res.status(200).json({ ok: true, msg: "ok" })
