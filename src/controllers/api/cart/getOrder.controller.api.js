@@ -8,7 +8,15 @@ module.exports = async (req, res) => {
             const statusCode = isCreate ? 201 : 200;
             res.status(statusCode).json({
                 ok: true,
-                data: await order.reload({ include: ["products"] })
+                    data: await order.reload({ include: [
+                        {
+                        association : "products",
+                            through:{
+                                attributes: ["quantity"]
+                            }
+                        }
+                    ] 
+                })
             })
         
     } catch(err){

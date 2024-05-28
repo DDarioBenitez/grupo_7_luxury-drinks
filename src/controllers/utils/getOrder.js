@@ -8,13 +8,9 @@ module.exports = async (req) => {
                     userId: req.query.userId
                 },
                 {
-                    state: "pending",   
+                    state: req.query.state || "pending",   
                 }
             ]
-        },
-        defaults: {
-            userId: req.query.userId
-
         },
         include: [
         {

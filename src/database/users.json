@@ -10,7 +10,7 @@
    {
       "id": 2,
       "name": "Dario",
-      "apellido": "Benitez",
+      "surname": "Benitez",
       "email": "reedq@gmail.comp",
       "password": 123456,
       "role": "regular"
@@ -59,8 +59,8 @@
    },
    {
       "id": 8,
-      "name": "",
-      "surname": "",
+      "name": "mathias",
+      "surname": "saravia",
       "email": "asas@gmail.com",
       "password": "$2a$10$7b0O0pnXFj67NElpTaT7PuZdJAlTrAWNg1i7DMa0kMFyXoo6ZgQX.",
       "role": "regular",
