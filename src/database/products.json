@@ -27,15 +27,6 @@
       "image": "Tinto_Luigi_Bosca_Malbec_750ml.webp"
    },
    {
-      "id": 4,
-      "name": "Dv Catena Cabernet 750ml",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "price": 7400,
-      "discount": 35,
-      "category": "vinos",
-      "image": "img-1712284355159-.jpg"
-   },
-   {
       "id": 5,
       "name": "Angelina Zapata Malbec 750ml",
       "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",

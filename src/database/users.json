@@ -128,5 +128,14 @@
       "password": "$2a$10$qtRqpiTCdsWv./7sjGfDQ.qDCezjYanJHhWZordvfjFEWRZAoy956",
       "rol": "regular",
       "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 16,
+      "name": "MATHIAS",
+      "surname": "SARAVIA",
+      "email": "mathiasxdxd@gmail.com",
+      "password": "$2a$10$GvYAmEBqvrObsK.v0jMO5OnSQY3cnp4lBZvaKGZETqVIS3gpSh8bG",
+      "rol": "ADMIN",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]
