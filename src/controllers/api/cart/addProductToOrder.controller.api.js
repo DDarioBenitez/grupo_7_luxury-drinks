@@ -1,5 +1,6 @@
 const db = require("../../../database/models");
 const { getOrderPending } = require("../../utils");
+const  {getTotalOrder, getTotalOrderV2}  = require("../../utils/getTotalOrder");
 module.exports = async (req, res) => {
 
     try {
@@ -25,15 +26,8 @@ module.exports = async (req, res) => {
             ]
         });
 
-        let total = 0;
-        order.products.forEach(({ price, orderproducts: { dataValues: {quantity}, 
-        },
-     }) => {      
-            total += price * quantity;
-        });
-
+        const total = getTotalOrderV2(order.products);
         order.total = total;
-
         await order.save();
 
 

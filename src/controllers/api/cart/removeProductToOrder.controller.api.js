@@ -1,5 +1,6 @@
 const db = require("../../../database/models");
 const { getOrderPending } = require("../../utils");
+const { getTotalOrderV2 } = require("../../utils/getTotalOrder");
 module.exports = async (req, res) => {
 
     try {
@@ -7,7 +8,7 @@ module.exports = async (req, res) => {
         
         if(!productId) throw new Error("el id del producto es obligatorio");
 
-        const [order, isCreate] = await getOrderPending(req);
+        let [order, isCreate] = await getOrderPending(req);
         
        await db.OrderProduct.destroy({
           where:{
@@ -26,7 +27,7 @@ module.exports = async (req, res) => {
                 }
             ]
         }); 
-        const total = getTotalOrder(order.products);
+        const total = getTotalOrderV2(order.products);
         order.total = total;
         await order.save();
 
