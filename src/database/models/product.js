@@ -1,4 +1,5 @@
 'use strict';
+const paginateSequelize = require('sequelize-paginate')
 const {
   Model
 } = require('sequelize');
@@ -36,5 +37,6 @@ module.exports = (sequelize, DataTypes) => {
     onDelete:"CASCADE",
     onUpdate:"CASCADE"
   });
+  paginateSequelize.paginate(product)
   return product;
 };

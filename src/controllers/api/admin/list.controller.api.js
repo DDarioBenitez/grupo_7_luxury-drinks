@@ -1,13 +1,17 @@
 const db = require("../../../database/models")
 module.exports = (req, res) => {
-    
-    db.product.findAll({
+    const {page} = req.query
+    db.product.paginate({
+        page:+page,
+        paginate:2,
         include: ["category"]
     })
-    .then(products => {
+    .then(({docs: products , pages , total}) => {
         res.status(200).json({
             ok:true,
-            data:products
+            data:products,
+            pages,
+            total
           })
     }).catch(err => {
         res.status(500).json({
