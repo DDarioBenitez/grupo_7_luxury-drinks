@@ -1,5 +1,5 @@
 const db = require("../../database/models")
-
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 module.exports = (req, res)=>{
     db.product.findAll({
         include: [{
@@ -8,6 +8,6 @@ module.exports = (req, res)=>{
         }]
     }).then((products) => {
         res.render("products/listProductAll",
-        {products}) 
+        {products,toThousand}) 
     })      
 }

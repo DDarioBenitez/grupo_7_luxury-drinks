@@ -20,7 +20,11 @@
 
                 <div class="login-contraseña">
                     <label class="login-contraseña1" for="password">contraseña:</label>
-                    <input class="login-contraseña2" type="password" name="password" value="" placeholder="contraseña">
+                    <input class="login-contraseña2" type="password" name="password" value="" placeholder="contraseña" id="password">
+                    <span class="eye" id="btn-eye">
+                        <i class="fa-solid fa-eye p-2 fs-4" id="icon-eye"></i>
+                        <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                      </span>
                     <p class="text-danger fs-6"><%= locals.errors?.password?.msg %></p>
                 </div>
 
@@ -38,5 +42,5 @@
             <%- include("../partials/footer")%>
 
     </body>
-
+    <script src="./js/events/events.js"> </script>
 </html>

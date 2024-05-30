@@ -19,7 +19,7 @@
 							<img src="/images/products/<%= p.imagePrincipal %>" alt="imagen de producto">
 						</figure>
 						<article class="product-box_data">
-							<h2>$<%= p.price %> </h2>
+							<h2>$<%= toThousand(p.price) %> </h2>
 							<span><%= p.discount %> % OFF</span>
 							<p><%= p.title %></p>
                             <p><%= p.category.name %></p>
