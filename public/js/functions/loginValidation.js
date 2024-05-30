@@ -14,4 +14,4 @@ window.addEventListener("load",() => {
         iconEye.classList.toggle("fa-eye-slash");
         iconEye.classList.toggle("fa-eye");
     })
-})
+});
