@@ -1,25 +1,25 @@
 const db = require("../../../database/models")
 module.exports = (req, res) => {
-
-    const {id} = req.params
-    const {title,price,discount,description,category} = req.body;
+    const {title,price,discount,description,categoryId} = req.body;
     const image = req.file
+    const {id} = req.params
     
-db.product.update({
-    title: title.trim(),
-    price: +price,
-    discount: +discount,
-    description: description.trim(),
-    categoryId: +category,
-    imagePrincipal:image ? image.filename : image
+    db.product.update({
 
-}, {where: {
-    id
-}})
-.then(() =>{    
-        res.status(200).json({
+        title: title.trim(),
+        price: +price,
+        discount: +discount,
+        description: description.trim(),
+        categoryId: +categoryId,
+        imagePrincipal:image ? image.filename : image
+
+    }, {where: {
+        id
+    }})
+    .then(() => {
+        res.status(201).json({
           ok:true,
-          msg:"producto actualizado con exito"
+          msg:"producto creado con exito"
         })
       }).catch(err => {
           res.status(500).json({
@@ -27,4 +27,4 @@ db.product.update({
               msg:err.message
           })
       })
-  }
+}

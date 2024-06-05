@@ -92,15 +92,16 @@
     background-color: var(--blancoClaro);
   }
 
-  .lupa {
+  button.search-form-btn {
     position: absolute;
-    font-size: 14px;
+    font-size: 12px;
     background-color: var(--blancoClaro);
-    padding: 12px;
+    padding: 10px;
     display: inline;
-    right: 8px;
-    top: 2px;
-    border-radius: 9px;
+    right: 14px;
+    top: 3px;
+    border-radius: 10px;
+    border: solid 1px white;
   }
 
   .carrito {
@@ -138,7 +139,7 @@
     border-radius: 9px;
     border: 0;
     background-color: var(--grisSuave);
-    padding: 0 6px 0 6px;
+    padding: 0 10px 0 10px;
     margin: 1px;
   }
 
@@ -167,6 +168,7 @@
     display: flex;
     justify-content: space-evenly;
     gap: 5px;
+    margin-top: 3px;
   }
 
   .navli {
@@ -175,9 +177,15 @@
     font-size: 16px;
   }
 
-  a {
+ header button a {
     text-decoration: none;
   }
+
+  header li a {
+    text-decoration: none;
+    color: #ccc8aa;
+  }
+
 .burger-menu{
   display: none;
 }
@@ -189,7 +197,10 @@
   .logo img{
     width: 50%;
   }
-
+  header a{
+    color:#ccc8aa;;
+    font-size: 14px;
+}
   
 }
   

@@ -10,7 +10,7 @@
    {
       "id": 2,
       "name": "Dario",
-      "apellido": "Benitez",
+      "surname": "Benitez",
       "email": "reedq@gmail.comp",
       "password": 123456,
       "role": "regular"
@@ -59,8 +59,8 @@
    },
    {
       "id": 8,
-      "name": "",
-      "surname": "",
+      "name": "mathias",
+      "surname": "saravia",
       "email": "asas@gmail.com",
       "password": "$2a$10$7b0O0pnXFj67NElpTaT7PuZdJAlTrAWNg1i7DMa0kMFyXoo6ZgQX.",
       "role": "regular",
@@ -127,6 +127,15 @@
       "email": "anto.l.d@hotmail.com",
       "password": "$2a$10$qtRqpiTCdsWv./7sjGfDQ.qDCezjYanJHhWZordvfjFEWRZAoy956",
       "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 16,
+      "name": "MATHIAS",
+      "surname": "SARAVIA",
+      "email": "mathiasxdxd@gmail.com",
+      "password": "$2a$10$GvYAmEBqvrObsK.v0jMO5OnSQY3cnp4lBZvaKGZETqVIS3gpSh8bG",
+      "rol": "ADMIN",
       "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]

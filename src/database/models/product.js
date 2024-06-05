@@ -1,4 +1,5 @@
 'use strict';
+const paginateSequelize = require('sequelize-paginate')
 const {
   Model
 } = require('sequelize');
@@ -14,11 +15,18 @@ module.exports = (sequelize, DataTypes) => {
        foreignKey:"categoryId",
        as:"category"
      })
+    product.belongsToMany(models.Order,{
+      through:"orderproducts",
+      foreignKey:"productId",
+      otherKey:"orderId",
+      as:"orders"
+    }) 
     }
+    
   }
   product.init({
     title: DataTypes.STRING,
-    price: DataTypes.DECIMAL,
+    price: DataTypes.INTEGER,
     discount: DataTypes.INTEGER,
     description: DataTypes.TEXT,
     imagePrincipal: DataTypes.STRING,
@@ -29,5 +37,6 @@ module.exports = (sequelize, DataTypes) => {
     onDelete:"CASCADE",
     onUpdate:"CASCADE"
   });
+  paginateSequelize.paginate(product)
   return product;
 };

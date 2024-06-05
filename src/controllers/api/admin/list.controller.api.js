@@ -1,19 +1,29 @@
 const db = require("../../../database/models")
+const { literal } = require("sequelize")
 module.exports = (req, res) => {
-    
-    db.product.findAll({
-        include: ["category"]
+
+    const originServer = () => `${req.protocol}://${req.get("host")}`
+    const { page } = req.query
+    db.product.paginate({
+        page: +page,
+        paginate: 2,
+        include: ["category"],
+        attributes: {
+            include: [[literal(`CONCAT('${originServer()}/api/product/',imagePrincipal)`), "imagePrincipal"]]
+        }
     })
-    .then(products => {
-        res.status(200).json({
-            ok:true,
-            data:products
-          })
-    }).catch(err => {
-        res.status(500).json({
-            ok:false,
-            msg:err.message
+        .then(({ docs: products, pages, total }) => {
+            res.status(200).json({
+                ok: true,
+                data: products,
+                pages,
+                total
+            })
+        }).catch(err => {
+            res.status(500).json({
+                ok: false,
+                msg: err.message
+            })
         })
-    })
 
 }

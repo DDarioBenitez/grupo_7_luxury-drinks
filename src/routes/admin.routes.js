@@ -18,5 +18,7 @@ router.put("/editar-producto/:id", uploadProducts.single("img") , adminControlle
 
 router.delete("/eliminar-producto/:id", adminController.deleteProduct);
 
+router.get("/lista-de-ordenes", adminController.orderProduct);
+
 
 module.exports = router;

@@ -7,12 +7,12 @@
 
         <%- include("../partials/header")%>
 
-            <main class="main-container">
-                <div class="glider-contain">
-                    <div class="glider">
-                        <div class="col-6">
+            <main class="main-container mt-3 p-1"><div class="col-12">
                             <h2 class="products-title">Resultados de la búsqueda: <%= keywords %></h2>
                         </div>
+                <div class="glider-contain">
+                    <div class="glider">
+                        
                         <% products.forEach(p=> { %>
                             <div class="products">
                                 <article class="product-1">

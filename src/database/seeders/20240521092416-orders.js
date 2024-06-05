@@ -9,8 +9,8 @@ const orderMappes = orderJSON.map((o) => {
       userId: user ? user.id :null,
       state:o.state
   }
+}) 
 
-})
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
