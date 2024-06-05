@@ -1,5 +1,9 @@
 const router = require("express").Router()
-const {} = require("../../controllers/api/auth");
+const { editUserApi,updateApi } = require("../../controllers/api/auth");
+
+/* /api/auth */
+router.get("/", editUserApi)
+router.post("/", updateApi)
 
 
 module.exports = router
