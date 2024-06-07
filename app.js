@@ -19,7 +19,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride("_method"))
-app.use(session({secret: "msj"}));
+/* app.use(session({secret: "msj"})); */
 app.use(cookieParse())
 app.use(session({secret:"PALABRA SECRETA", saveUninitialized: true, resave: true}))
 app.use(createSessionFromCookies)
