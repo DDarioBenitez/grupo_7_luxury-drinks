@@ -22,35 +22,52 @@ const fielPasswordRegister = body("password")
 .notEmpty().withMessage("Campo requerido").bail()
 .isLength({min:8,max:16}).withMessage("Longitud invalida").bail()
 
-const loginEmail = body("emailLogin")
-    .notEmpty().withMessage("Campo requerido").bail()
-    .isEmail().withMessage("Formato invalido").bail()
-    .custom(async (value, { req }) => {
+//LOGIN
+
+const loginEmail = body("email")
+    .notEmpty()
+    .withMessage("El campo email es requerido!").bail()
+    .isEmail()
+    .withMessage("Debe completar un email valido!").bail()
+    .custom( async (value, { req }) => {
         try {
             const userFind = await db.user.findAll({
                 where: { email: value.trim() }
             })
+    
             if (!userFind.length) {
-                throw new Error("El email ingresado no está registrado!")
+                throw new Error("Credenciales inválidas")
             }
         } catch (error) {
             throw error
         }
     });
 
-const fieldPassword = body("password")
-.notEmpty().withMessage("Campo requerido").bail()
-.custom((value,{req})=>{
-    const users = loadData("users")
-    const isValidPass = compareSync(password, userFind.password)
-    if(!isValidPass){
-        throw new Error("Contraseña invalida")
-    }
-})
-
+const logindPassword = body("password")
+    .notEmpty()
+    .withMessage("El campo contraseña es requerido!")
+    .bail()
+    .custom(async (value, { req }) => {
+        try {
+            const { email } = req.body;
+            const userFind = await db.user.findAll({
+                where: { email }
+            })
+            if (userFind.length) {
+                const isValidPassword = compareSync(value, userFind[0].password)
+                if (!isValidPassword) {
+                    throw new Error("Credenciales inválidas");
+                }
+            } else {
+                throw new Error("Credenciales inválidas");
+            }
+        } catch (error) {
+            throw error
+        }
+    });
 
 
 module.exports = {
     registerValidation:[fieldMail,fielPasswordRegister],
-    LoginValidation:[loginEmail,fieldPassword]
+    LoginValidation:[loginEmail,logindPassword]
 }
