@@ -35,6 +35,7 @@ const Products = () => {
         /* type: typeof value, */
       }
     })
+    console.log(dataProduct)
     
     const rowsFormat = [];
     products.forEach((product) => {
