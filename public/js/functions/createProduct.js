@@ -18,7 +18,7 @@ window.addEventListener("load", () => {
     existError = false;
   };
 
-  const errTitle = document.querySelector(".err-title");
+  const errTitle = document.querySelector(".error-title");
   inputTitle.addEventListener("blur", function () {
     const value = this.value.trim();
 

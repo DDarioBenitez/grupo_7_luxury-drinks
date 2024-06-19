@@ -20,13 +20,13 @@
       <div class=" col-12">
         <label for="text" class="form-label"></label>
         <input type="text" class="form-control" name="title" placeholder="Titulo" value="" id="title">
-        
+        <p class="text-danger fs-6 error-title"> <%= locals.errors?.title?.msg %></p>
       </div>
-<p class="text-danger fs-6 error-title"> <%= locals.errors?.title?.msg %></p>
+
       <div class="mb-3 col-6">
         <label for="precio" class="form-label"></label>
-        <input type="number" class="form-control" id="" name="price" placeholder="Precio" value="" id="price">
-        <p class="text-danger fs-6 err-price"><%= locals.errors?.price?.msg %></p>
+        <input type="number" class="form-control" id="" name="price" placeholder="Precio" value="" id="price"/>
+        <p class="text-danger fs-6 error-price"><%= locals.errors?.price?.msg %></p>
       </div>
 
       <div class="mb-3 col-6">
@@ -77,6 +77,6 @@
 
 
 </body>
+
 <script src="./js/functions/createProduct.js"> </script>
-<%- include("../partials/scripts")%>
 </html>
