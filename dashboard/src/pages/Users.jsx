@@ -36,7 +36,7 @@ export const Users = props => {
         field: key,
         headerName: headerNameTableUser[key],
         with: 150,
-        /* type: typeof value, */
+        type: typeof value, 
       }
     })
     

@@ -169,7 +169,6 @@ window.addEventListener("load", () => {
     const isTitle = inputTitle.value?.trim();
     const isPrecio = inputPrecio.value?.trim();
     const isDescription = inputDescription.value?.trim();
-    const isChef = inputChef.options[inputChef.selectedIndex].value?.trim();
     const isImagePrincipal = inputImagePrincipal.files.length;
     const isImageSecondary = inputImageSecondary.files.length;
     event.preventDefault();
@@ -178,7 +177,6 @@ window.addEventListener("load", () => {
       case !isTitle:
       case !isPrecio:
       case !isDescription:
-      case !isChef:
       case !isImagePrincipal:
       case !isImageSecondary:
         existError = true;
