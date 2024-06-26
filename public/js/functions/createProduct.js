@@ -1,6 +1,8 @@
 //CREATE PRODUCT 
+
 const inputTitle = document.querySelector("[name='title']");	
-const inputPrice= document.querySelector("[name='price']");
+const inputDescription = document.querySelector("[name='description']");		
+const inputPrecio= document.querySelector("[name='price']");
 const inputDiscount = document.querySelector("[name='discount']"); 
 const inputImagePrincipal = document.querySelector("[name='imagePrincipal']");
 window.addEventListener("load", () => {
@@ -170,7 +172,6 @@ window.addEventListener("load", () => {
     const isPrecio = inputPrecio.value?.trim();
     const isDescription = inputDescription.value?.trim();
     const isImagePrincipal = inputImagePrincipal.files.length;
-    const isImageSecondary = inputImageSecondary.files.length;
     event.preventDefault();
 
     switch (true) {
@@ -178,7 +179,6 @@ window.addEventListener("load", () => {
       case !isPrecio:
       case !isDescription:
       case !isImagePrincipal:
-      case !isImageSecondary:
         existError = true;
         errFormGeneral.innerHTML = "Todos los campos son requeridos";
         errFormGeneral.classList.add("alert", "alert-danger");
