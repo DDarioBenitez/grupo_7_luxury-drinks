@@ -5,5 +5,6 @@ module.exports = {
  moreQuantity:require("./moreQuantity.controlles.api"),
  lessQuantity:require("./lessQuantity.controlles.api"),
  canceledOrder:require("./canceledOrder.controller.api"),
- completedOrder:require("./completedOrder.controller.api")
+ completedOrder:require("./completedOrder.controller.api"),
+ clearProduct:require("./clearProductOrder.controller.api")
 }
