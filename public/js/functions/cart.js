@@ -17,7 +17,7 @@ const getCartStructure = (p) => {
     
       <img class="col-4" style="object-fit: contain; height: 200px"  src="${p.imagePrincipal}" alt="">
       <div class="col-8 position-relative">
-      <button class="fs-5 p-0 border-0 bg-transparent position-absolute text-danger " style="top:-3px;right:10px"><i style="padding:2px" class="rounded-circle btn-clear far fa-times-circle p-2"></i></button>
+      <button class="fs-5 p-0 border-0 bg-transparent position-absolute text-danger " style="top:-3px;right:10px" onClick="removeProductCart(${p.id})"><i style="padding:2px" class="rounded-circle btn-clear far fa-times-circle p-2"></i></button>
 
       <h5 class="card-title p-2">${p.title}</h5>
       <p class="card-text">${cutText(p.description,80)}</p>
@@ -104,6 +104,23 @@ moreProduct = async (id) => {
     const containerProducts = $("#card-container");
     const outputTotal = $("#show-total");
     const {ok,msg} = await fetch(`${server}/api/cart/more/${id}`,{
+      method:"PATCH"
+    }).then(res => res.json());
+
+    if(ok){
+      processReloadCart(server, containerProducts, outputTotal);
+    }
+
+  } catch (error) {
+    console.log(error)
+  }
+}
+
+const removeProductCart = async (id) => {
+  try {
+    const containerProducts = $("#card-container");
+    const outputTotal = $("#show-total");
+    const {ok,msg} = await fetch(`${server}/api/cart/remove/${id}`,{
       method:"PATCH"
     }).then(res => res.json());
 
