@@ -20,6 +20,8 @@ router.put("/editar-producto/:id", uploadProducts.single("img"), checkAdmin, adm
 
 router.delete("/eliminar-producto/:id", checkAdmin, adminController.deleteProduct);
 
+router.get("/remover-producto/:id", checkAdmin, adminController.removeProduct);
+
 router.get("/lista-de-ordenes", adminController.orderProduct);
 
 

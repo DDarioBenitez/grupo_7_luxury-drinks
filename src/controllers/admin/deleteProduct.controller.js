@@ -1,22 +1,38 @@
-const { loadData, saveData } = require("../../database");
-const path = require("path")
-const fs = require("fs")
+const db = require('../../database/models');
+const path = require('path');
+const fs = require('fs');
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
     const { id } = req.params;
-    const products = loadData();
 
-    const productsLessOne = products.filter(p => p.id !== +id)
-    const productDestroy = products.find(p => p.id == +id)
+    try {
+       
+        const productDeleted = await db.product.findByPk(id);
 
-    const pathFile = path.join(__dirname, "/public/images/products" + productDestroy.image);
+        
+        if (!productDeleted) {
+            return res.status(404).send("El producto no fue encontrado");
+        }
 
-    const existFile = fs.existsSync(pathFile)
-    if (existFile) {
-        fs.unlinkSync(pathFile)
+        
+        if (productDeleted.image != "/images/default.jpg") {
+            const filePath = path.join(__dirname, `../../public/images/products/${productDeleted.image}`);
+            const existFile = fs.existsSync(filePath);
+            if (existFile) {
+                fs.unlinkSync(filePath);
+            }
+        }
+
+        
+        await db.product.destroy({
+            where: {
+                id: productDeleted.id
+            }
+        });
+
+        res.redirect("/admin/lista-de-productos");
+    } catch (error) {
+        console.error("Error al eliminar el producto:", error);
+        res.status(500).send("Error interno del servidor");
     }
-
-    saveData(productsLessOne)
-
-    res.redirect('/admin/lista-de-productos')
-}
+};
