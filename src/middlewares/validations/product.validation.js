@@ -39,7 +39,7 @@ const fieldDescripcion = check("description")
     .isLength({ min: 30, max: 500 })
     .withMessage("La descripción debe tener un mínimo de 30 y un máximo de 500 caracteres");
 
-    const fieldImagePrincipalStore = body("imagePrincipal")
+/*     const fieldImagePrincipalStore = body("imagePrincipal")
     .custom((value, { req }) => {
     const lengthImages = req.files?.imagePrincipal?.length;
 
@@ -51,7 +51,7 @@ const fieldDescripcion = check("description")
 
     if (!isFormatSuccess) throw new Error("El formato de la imagen principal es inválido");
     return true;
-});
+}); */
 
 const defaultValidationFields = [
     fieldTitulo,
@@ -62,5 +62,5 @@ const defaultValidationFields = [
 
 module.exports = {
     productValidationCreate:[
-        ...defaultValidationFields,
-        fieldImagePrincipalStore]}; 
+        ...defaultValidationFields/* ,
+        fieldImagePrincipalStore */]}; 
