@@ -96,11 +96,11 @@
 }
 
 .registrarse form .button {
-  padding: 13px;
+  padding: 15px;
   display: flex;
   justify-content: center;
   height: 3.6rem;
-  margin-top: 15px;
+  margin-top: 60px;
 }
 
 .registrarse form .button button {

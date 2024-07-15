@@ -137,5 +137,23 @@
       "password": "$2a$10$GvYAmEBqvrObsK.v0jMO5OnSQY3cnp4lBZvaKGZETqVIS3gpSh8bG",
       "rol": "ADMIN",
       "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 17,
+      "name": "mathias",
+      "surname": "saravia",
+      "email": "mathiasxd2@gmail.com",
+      "password": "$2a$10$iwvAKGWgHdb0o49ZBBV9DuqY0cECUZqKmAqFCUq0t3Yg/gTj1zdFK",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 18,
+      "name": "mathiasxd",
+      "surname": "a",
+      "email": "mathias1234@gmail.com",
+      "password": "$2a$10$uhhSTWWphX0vqrjhBMAQ5.YgUauHlh9uljiAXYRM4JWrVn1ygep1q",
+      "rol": "regular",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]

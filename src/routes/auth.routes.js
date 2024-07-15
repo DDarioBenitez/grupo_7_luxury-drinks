@@ -17,7 +17,7 @@ router.post("/registrarse", registerValidation ,authController.registerProcess);
 //router.get("/perfil", authController.perfil)
 
 router.get("/actualizar-usuario/:id", authController.editUser);
-router.put("/actualizar-usuario/:id", updateValidation, authController.updateUser);
+router.put("/actualizar-usuario/:id", authController.updateUser);
 
 router.get("/cerrar-sesion", authController.logout)
 
