@@ -1,4 +1,4 @@
-const db = require("../../database/models");
+/*const db = require("../../database/models");
 
 module.exports = async (req, res) => {
     try {
@@ -34,4 +34,4 @@ module.exports = async (req, res) => {
   } catch (error) {
     res.json(error);
   }
-};
+};*/

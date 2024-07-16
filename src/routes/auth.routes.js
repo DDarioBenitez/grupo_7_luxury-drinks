@@ -30,11 +30,11 @@ passport.deserializeUser((user, done) => {
     done(null, user);
 });
 
-
+/*
 //login google
 router.get("/auth/iniciar/google", passport.authenticate("google", { scope: ["profile", "email"] }));
 router.get("/auth/google/callback", passport.authenticate("google", {failureRedirect:"/auth/iniciar"}),
 loginAndRegisterGoogle
-);
+);*/
 
 module.exports = router;
