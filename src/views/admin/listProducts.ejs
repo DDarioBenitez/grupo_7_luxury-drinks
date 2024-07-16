@@ -24,7 +24,7 @@
                         <tr>
                             <th scope="col">Id</th>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Price</th>
+                            <th scope="col">Precio</th>
                             <th scope="col">Categoria</th>
                         </tr>
                     </thead>
@@ -42,7 +42,7 @@
                                     <%= p.price %>
                                 </td>
                                 <td class="text-center">
-                                    <%= p.category.name %>
+                                    <%= p.category ? p.category.name : 'Categoría desconocida' %>
                                 </td>
                                 <td>
                                     <form action="/admin/editar-producto/<%= p.id %>" method="GET">

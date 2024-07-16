@@ -137,5 +137,14 @@
       "password": "$2a$10$GvYAmEBqvrObsK.v0jMO5OnSQY3cnp4lBZvaKGZETqVIS3gpSh8bG",
       "rol": "ADMIN",
       "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
+   },
+   {
+      "id": 17,
+      "name": "Antonela",
+      "surname": "duckwen",
+      "email": "antod@hotmail.com",
+      "password": "$2a$10$8zg5BFRlucK/T1UK6hE8huwObpXv4t3KwPTyKTsbVyCIjTJaU7C2O",
+      "rol": "ADMIN",
+      "avatar": "default-avatar-icon-of-social-media-user-vector.jpg"
    }
 ]

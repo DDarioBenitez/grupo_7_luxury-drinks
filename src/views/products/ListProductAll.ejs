@@ -22,7 +22,7 @@
 							<h2>$<%= toThousand(p.price) %> </h2>
 							<span><%= p.discount %> % OFF</span>
 							<p><%= p.title %></p>
-                            <p><%= p.category.name %></p>
+                            <p><%= p.category ? p.category.name : 'Categoría desconocida' %></p>
 							<i class="fas fa-truck"></i>
 						</article>
 					</a>

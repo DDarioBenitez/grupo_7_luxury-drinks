@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express')
 const path = require('path')
 const app = express();
@@ -8,6 +9,8 @@ const createSessionFromCookies = require("./src/middlewares/createSessionFromCoo
 const insertDataLocal = require('./src/middlewares/insertDataLocal');
 const cookieParse = require("cookie-parser")
 const cors = require("cors")
+const passport = require("passport")
+const { configServiceLogInGoogle } = require("./src/service/google.service");
 
 
 /* CONFIGS */
@@ -23,11 +26,13 @@ app.use(express.json());
 app.use(methodOverride("_method"))
 /* app.use(session({secret: "msj"})); */
 app.use(cookieParse())
-app.use(session({secret:"PALABRA SECRETA", saveUninitialized: true, resave: true}))
+app.use(session({secret:"PALABRA SECRETA", saveUninitialized: true, resave: true}));
 app.use(createSessionFromCookies)
 app.use(insertDataLocal);
+app.use(passport.initialize());
+app.use(passport.session());
 
-
+configServiceLogInGoogle();
 
 /* ENRUTADORES */
 /* MVC */
@@ -43,6 +48,9 @@ const apiAuthRoutes = require("./src/routes/api/auth.api");
 const apiCartRoutes = require("./src/routes/api/cart.api");
 const apiProductRoutes = require("./src/routes/api/products.api");
 const apiAdminRoutes = require("./src/routes/api/admin.api");
+
+
+
 
 /* RUTAS */
 app.use("/", otherRoutes);

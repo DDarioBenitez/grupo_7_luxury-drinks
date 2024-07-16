@@ -6,5 +6,7 @@ module.exports = {
     perfil:require("./perfil.controller"),
     editUser:require("./editUser.controller"),
     updateUser:require("./updateUser.controller"),
-    logout:require("./logout.controller")
+    logout:require("./logout.controller"),
+    loginAndRegisterGoogle:require("./loginAndRegisterGoogle.controller")
+
 }

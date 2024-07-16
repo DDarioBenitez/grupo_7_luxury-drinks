@@ -33,8 +33,8 @@ const fieldDescripcion = check("description")
     .notEmpty()
     .withMessage("La descripción es requerida")
     .bail()
-    .isAlphanumeric("es-ES", { ignore: " .," })
-    .withMessage("La descripción debe ser alfanumérica")
+    /*.isAlphanumeric("es-ES", { ignore: " .," })
+    .withMessage("La descripción debe ser alfanumérica")*/
     .bail()
     .isLength({ min: 30, max: 500 })
     .withMessage("La descripción debe tener un mínimo de 30 y un máximo de 500 caracteres");
