@@ -7,8 +7,9 @@ module.exports = async (req, res) =>{
    try {
       const errors = validationResult(req) 
       if(errors.isEmpty()) {
-         const { name, email, password } = req.body
+         const { name, email, password,surname } = req.body
          db.user.create({
+            surname: surname ? surname.trim() : '',
             name: name ? name.trim() : '',
             email: email?.trim().toLowerCase(),  
             password: bcrypt.hashSync(password?.trim(), 12)

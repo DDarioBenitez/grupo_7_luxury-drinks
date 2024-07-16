@@ -33,6 +33,7 @@ const Products = () => {
         headerName: headerNameTable[key],
         width: key === "description" ? 400 : 100,
         /* type: typeof value, */
+        editable: true,
       }
     })
     console.log(dataProduct)

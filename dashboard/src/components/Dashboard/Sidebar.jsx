@@ -38,11 +38,11 @@ export  function Sidebar() {
  </li>
 
  {/* <!-- Nav Item - Charts --> */}
- <li className="nav-item">
+{/*  <li className="nav-item">
    <Link className="nav-link" to="/orders">
      <i className="fas fa-fw fa-chart-area"></i>
      <span>Ordenes</span></Link>
- </li>
+ </li> */}
 
  {/* <!-- Nav Item - Tables --> */}
  <li className="nav-item">
