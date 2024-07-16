@@ -1,4 +1,4 @@
-const Strategy = require("passport-google-oauth").OAuth2Strategy;
+/*const Strategy = require("passport-google-oauth").OAuth2Strategy;
 const passport = require("passport")
 
 const clientID = process.env.GOOGLE_CLIENT_ID
@@ -17,4 +17,4 @@ const strategy = new Strategy({
 
 const configServiceLogInGoogle = () => passport.use(strategy)
 
-module.exports = { configServiceLogInGoogle }
+module.exports = { configServiceLogInGoogle }*/
